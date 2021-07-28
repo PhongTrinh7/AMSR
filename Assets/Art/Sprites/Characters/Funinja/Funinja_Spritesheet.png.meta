@@ -1,0 +1,1034 @@
+fileFormatVersion: 2
+guid: 177f4aae3ef89ff4aadc0c1fb6690d7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2512587909033334158
+    second: Funinja_Spritesheet_0
+  - first:
+      213: -6237373725802873089
+    second: Funinja_Spritesheet_1
+  - first:
+      213: 3212227736128943666
+    second: Funinja_Spritesheet_2
+  - first:
+      213: -5157055241168768402
+    second: Funinja_Spritesheet_3
+  - first:
+      213: -9159084392202052192
+    second: Funinja_Spritesheet_4
+  - first:
+      213: 2730530047241122386
+    second: Funinja_Spritesheet_5
+  - first:
+      213: 4590570588103434998
+    second: Funinja_Spritesheet_6
+  - first:
+      213: 4137058523844137623
+    second: Funinja_Spritesheet_7
+  - first:
+      213: -2465996795565159082
+    second: Funinja_Spritesheet_8
+  - first:
+      213: -8855335767116751422
+    second: Funinja_Spritesheet_9
+  - first:
+      213: -6977597923381913435
+    second: Funinja_Spritesheet_10
+  - first:
+      213: -8446250352476341223
+    second: Funinja_Spritesheet_11
+  - first:
+      213: -2256113868811835667
+    second: Funinja_Spritesheet_12
+  - first:
+      213: -3367401039094736452
+    second: Funinja_Spritesheet_13
+  - first:
+      213: 4452641881515916644
+    second: Funinja_Spritesheet_14
+  - first:
+      213: 6514322980519925717
+    second: Funinja_Spritesheet_15
+  - first:
+      213: 3954873023072584682
+    second: Funinja_Spritesheet_16
+  - first:
+      213: 639150492913579120
+    second: Funinja_Spritesheet_17
+  - first:
+      213: -5233545719470317828
+    second: Funinja_Spritesheet_18
+  - first:
+      213: 2730320504636636621
+    second: Funinja_Spritesheet_19
+  - first:
+      213: 418013433861019423
+    second: Funinja_Spritesheet_20
+  - first:
+      213: 4019698299102163943
+    second: Funinja_Spritesheet_21
+  - first:
+      213: -8589687956512830689
+    second: Funinja_Spritesheet_22
+  - first:
+      213: 6247908570824834255
+    second: Funinja_Spritesheet_23
+  - first:
+      213: 911246784499632842
+    second: Funinja_Spritesheet_24
+  - first:
+      213: -7058717032539480740
+    second: Funinja_Spritesheet_25
+  - first:
+      213: -8049724011925673992
+    second: Funinja_Spritesheet_26
+  - first:
+      213: -7925608259213531123
+    second: Funinja_Spritesheet_27
+  - first:
+      213: 6502564651502004553
+    second: Funinja_Spritesheet_28
+  - first:
+      213: -9100774770626963787
+    second: Funinja_Spritesheet_29
+  - first:
+      213: 4171817548340331926
+    second: Funinja_Spritesheet_30
+  - first:
+      213: -2706129054288264882
+    second: Funinja_Spritesheet_31
+  - first:
+      213: -5067237505497603414
+    second: Funinja_Spritesheet_32
+  - first:
+      213: -931449633429327039
+    second: Funinja_Spritesheet_33
+  - first:
+      213: -2589525173490591800
+    second: Funinja_Spritesheet_0
+  - first:
+      213: -372969421944615985
+    second: Funinja_Spritesheet_1
+  - first:
+      213: -6822735386989475204
+    second: Funinja_Spritesheet_2
+  - first:
+      213: 1631612088841792842
+    second: Funinja_Spritesheet_3
+  - first:
+      213: -6865466039009230914
+    second: Funinja_Spritesheet_4
+  - first:
+      213: -2727561256990382103
+    second: Funinja_Spritesheet_5
+  - first:
+      213: -4837994703503612879
+    second: Funinja_Spritesheet_6
+  - first:
+      213: 8368439001004168423
+    second: Funinja_Spritesheet_7
+  - first:
+      213: -4489125426928891597
+    second: Funinja_Spritesheet_8
+  - first:
+      213: -8998526262864485514
+    second: Funinja_Spritesheet_9
+  - first:
+      213: 3093204399361449799
+    second: Funinja_Spritesheet_10
+  - first:
+      213: 949104893929735824
+    second: Funinja_Spritesheet_11
+  - first:
+      213: -2308693779703419863
+    second: Funinja_Spritesheet_12
+  - first:
+      213: 7500116249550336582
+    second: Funinja_Spritesheet_13
+  - first:
+      213: -3474578144667066209
+    second: Funinja_Spritesheet_14
+  - first:
+      213: -8172426729144932702
+    second: Funinja_Spritesheet_15
+  - first:
+      213: -5919131573574267238
+    second: Funinja_Spritesheet_16
+  - first:
+      213: 2663423085071557341
+    second: Funinja_Spritesheet_17
+  - first:
+      213: -6661387544282745945
+    second: Funinja_Spritesheet_18
+  - first:
+      213: 1061301921510992736
+    second: Funinja_Spritesheet_19
+  - first:
+      213: 9203946821260066910
+    second: Funinja_Spritesheet_20
+  - first:
+      213: -4931549170291272588
+    second: Funinja_Spritesheet_21
+  - first:
+      213: -5061605027775235092
+    second: Funinja_Spritesheet_22
+  - first:
+      213: -2711909789546295710
+    second: Funinja_Spritesheet_23
+  - first:
+      213: -4924208695424273763
+    second: Funinja_Spritesheet_24
+  - first:
+      213: 8310398744074415043
+    second: Funinja_Spritesheet_25
+  - first:
+      213: -2846587753554717092
+    second: Funinja_Spritesheet_26
+  - first:
+      213: 5645933786320506623
+    second: Funinja_Spritesheet_27
+  - first:
+      213: -820432610136362099
+    second: Funinja_Spritesheet_28
+  - first:
+      213: 7555541106964949943
+    second: Funinja_Spritesheet_29
+  - first:
+      213: -2298202425046578747
+    second: Funinja_Spritesheet_30
+  - first:
+      213: -3761664214515519326
+    second: Funinja_Spritesheet_31
+  - first:
+      213: 2656277767899849590
+    second: Funinja_Spritesheet_32
+  - first:
+      213: 361143915437285762
+    second: Funinja_Spritesheet_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c759291398201cd0800000000000000
+      internalID: -2589525173490591800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb88ec6942f2daf0800000000000000
+      internalID: -372969421944615985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a410e5056c051a0800000000000000
+      internalID: -6822735386989475204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4de5a6dc86a4a610800000000000000
+      internalID: 1631612088841792842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfb8572307f8b0a0800000000000000
+      internalID: -6865466039009230914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e768fdec71c52ad0800000000000000
+      internalID: -2727561256990382103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1342270337dfbdcb0800000000000000
+      internalID: -4837994703503612879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4d06bfeeaa22470800000000000000
+      internalID: 8368439001004168423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339cab7653c63b1c0800000000000000
+      internalID: -4489125426928891597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67360f74a00de1380800000000000000
+      internalID: -8998526262864485514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f5d9143054dea20800000000000000
+      internalID: 3093204399361449799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09644495fd5eb2d00800000000000000
+      internalID: 949104893929735824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92caf954d3fd5ffd0800000000000000
+      internalID: -2308693779703419863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642359cddf3c51860800000000000000
+      internalID: 7500116249550336582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90a8c62691d7cfc0800000000000000
+      internalID: -3474578144667066209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6a8607035b59e80800000000000000
+      internalID: -8172426729144932702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e8e4ad1350bdda0800000000000000
+      internalID: -5919131573574267238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2e3483f2166f420800000000000000
+      internalID: 2663423085071557341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3b0df625ffd83a0800000000000000
+      internalID: -6661387544282745945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b2a1f79708abe00800000000000000
+      internalID: 1061301921510992736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50cacc8edcfabf70800000000000000
+      internalID: 9203946821260066910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4749a68782e9f8bb0800000000000000
+      internalID: -4931549170291272588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb30267b0191c9b0800000000000000
+      internalID: -5061605027775235092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e403b2a6c5d5ad0800000000000000
+      internalID: -2711909789546295710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92b855f742b9abb0800000000000000
+      internalID: -4924208695424273763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb686a90a7745370800000000000000
+      internalID: 8310398744074415043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56d46f1583ee78d0800000000000000
+      internalID: -2846587753554717092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe820f7dd26a5e40800000000000000
+      internalID: 5645933786320506623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.41754517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83fcae43ec3d94f0800000000000000
+      internalID: -820432610136362099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5079243, y: 0.41754517}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbe1861b9caad860800000000000000
+      internalID: 7555541106964949943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9482122152b10e0800000000000000
+      internalID: -2298202425046578747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0f089b352ebcbc0800000000000000
+      internalID: -3761664214515519326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673207c6e8efcd420800000000000000
+      internalID: 2656277767899849590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Funinja_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281ee684a7a030500800000000000000
+      internalID: 361143915437285762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

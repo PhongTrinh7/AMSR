@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: e041b8e04c2949a4ab28078908e639a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3348095454645485427
+    second: Anglerslash_Spritesheet_0
+  - first:
+      213: 6589400522457956111
+    second: Anglerslash_Spritesheet_1
+  - first:
+      213: 6635735988277478594
+    second: Anglerslash_Spritesheet_2
+  - first:
+      213: -8463262271675317005
+    second: Anglerslash_Spritesheet_3
+  - first:
+      213: -1080386063297067685
+    second: Anglerslash_Spritesheet_4
+  - first:
+      213: -1056849530293005397
+    second: Anglerslash_Spritesheet_5
+  - first:
+      213: -5912912466850089796
+    second: Anglerslash_Spritesheet_6
+  - first:
+      213: -7098548261696344043
+    second: Anglerslash_Spritesheet_7
+  - first:
+      213: -4428474136257926121
+    second: Anglerslash_Spritesheet_8
+  - first:
+      213: 5392796077914568311
+    second: Anglerslash_Spritesheet_9
+  - first:
+      213: 3454742677662243248
+    second: Anglerslash_Spritesheet_10
+  - first:
+      213: -2690247307008196942
+    second: Anglerslash_Spritesheet_11
+  - first:
+      213: 603793369564644739
+    second: Anglerslash_Spritesheet_12
+  - first:
+      213: -7057302769084101250
+    second: Anglerslash_Spritesheet_13
+  - first:
+      213: -6435962675726512544
+    second: Anglerslash_Spritesheet_14
+  - first:
+      213: -6735518139956431472
+    second: Anglerslash_Spritesheet_15
+  - first:
+      213: 378240482941394710
+    second: Anglerslash_Spritesheet_16
+  - first:
+      213: 6894134250928654106
+    second: Anglerslash_Spritesheet_17
+  - first:
+      213: -2074302385669150694
+    second: Anglerslash_Spritesheet_18
+  - first:
+      213: 5038622540355585981
+    second: Anglerslash_Spritesheet_19
+  - first:
+      213: -9198762679718804739
+    second: Anglerslash_Spritesheet_20
+  - first:
+      213: -1114170603377924485
+    second: Anglerslash_Spritesheet_21
+  - first:
+      213: 5971679349875033780
+    second: Anglerslash_Spritesheet_22
+  - first:
+      213: 8834735597502905873
+    second: Anglerslash_Spritesheet_23
+  - first:
+      213: -5454312471690053462
+    second: Anglerslash_Spritesheet_24
+  - first:
+      213: -1658061391145493644
+    second: Anglerslash_Spritesheet_25
+  - first:
+      213: -7554769221762917376
+    second: Anglerslash_Spritesheet_26
+  - first:
+      213: 4452944699585824905
+    second: Anglerslash_Spritesheet_27
+  - first:
+      213: -7492655282753217505
+    second: Anglerslash_Spritesheet_28
+  - first:
+      213: 1676313077335506903
+    second: Anglerslash_Spritesheet_29
+  - first:
+      213: -3719002934848517164
+    second: Anglerslash_Spritesheet_30
+  - first:
+      213: 3452382303437372476
+    second: Anglerslash_Spritesheet_31
+  - first:
+      213: -3533915115951611753
+    second: Anglerslash_Spritesheet_32
+  - first:
+      213: 1709758756832472681
+    second: Anglerslash_Spritesheet_33
+  - first:
+      213: -1029666419361091243
+    second: Anglerslash_Spritesheet_34
+  - first:
+      213: -58850184292510210
+    second: Anglerslash_Spritesheet_35
+  - first:
+      213: -5457335840304406827
+    second: Anglerslash_Spritesheet_36
+  - first:
+      213: -4634113483750699417
+    second: Anglerslash_Spritesheet_37
+  - first:
+      213: 427675815600115787
+    second: Anglerslash_Spritesheet_38
+  - first:
+      213: 5861141340940184289
+    second: Anglerslash_Spritesheet_39
+  - first:
+      213: 8163298933253391503
+    second: Anglerslash_Spritesheet_40
+  - first:
+      213: 3422410199395838467
+    second: Anglerslash_Spritesheet_41
+  - first:
+      213: -8995703228110330195
+    second: Anglerslash_Spritesheet_42
+  - first:
+      213: -3288964550100728755
+    second: Anglerslash_Spritesheet_43
+  - first:
+      213: 2029479393853845704
+    second: Anglerslash_Spritesheet_44
+  - first:
+      213: -8925440179542763988
+    second: Anglerslash_Spritesheet_0
+  - first:
+      213: -9013225827988927165
+    second: Anglerslash_Spritesheet_1
+  - first:
+      213: -4292971847565993272
+    second: Anglerslash_Spritesheet_2
+  - first:
+      213: 4130496958191772203
+    second: Anglerslash_Spritesheet_3
+  - first:
+      213: -7192566299455020461
+    second: Anglerslash_Spritesheet_4
+  - first:
+      213: -1144250649101845034
+    second: Anglerslash_Spritesheet_5
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anglerslash_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 566
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26da5a1277722480800000000000000
+      internalID: -8925440179542763988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anglerslash_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 566
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d08521dd69ae280800000000000000
+      internalID: -9013225827988927165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anglerslash_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 283
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca931b89dc4c64c0800000000000000
+      internalID: -4292971847565993272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anglerslash_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 283
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b222ad26919725930800000000000000
+      internalID: 4130496958191772203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anglerslash_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352a989fe0fde2c90800000000000000
+      internalID: -7192566299455020461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anglerslash_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd364ed81ece10f0800000000000000
+      internalID: -1144250649101845034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

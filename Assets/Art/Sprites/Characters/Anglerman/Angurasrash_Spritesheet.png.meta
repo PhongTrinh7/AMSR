@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: d200227da48547846ba077327de3d129
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6496754377238656509
+    second: Angurasrash_Spritesheet_0
+  - first:
+      213: -2659008269669745558
+    second: Angurasrash_Spritesheet_1
+  - first:
+      213: 7234392640098439729
+    second: Angurasrash_Spritesheet_2
+  - first:
+      213: 75247659674326798
+    second: Angurasrash_Spritesheet_3
+  - first:
+      213: -3255753685432761604
+    second: Angurasrash_Spritesheet_4
+  - first:
+      213: -2515130866486199676
+    second: Angurasrash_Spritesheet_5
+  - first:
+      213: 5836590389741078592
+    second: Angurasrash_Spritesheet_6
+  - first:
+      213: 8985458274960324913
+    second: Angurasrash_Spritesheet_7
+  - first:
+      213: 3902701942682624910
+    second: Angurasrash_Spritesheet_8
+  - first:
+      213: 1223816242306392544
+    second: Angurasrash_Spritesheet_9
+  - first:
+      213: -7002304436683338926
+    second: Angurasrash_Spritesheet_10
+  - first:
+      213: -3409194589421146334
+    second: Angurasrash_Spritesheet_11
+  - first:
+      213: -1736011564181070519
+    second: Angurasrash_Spritesheet_12
+  - first:
+      213: 4550417408509415948
+    second: Angurasrash_Spritesheet_13
+  - first:
+      213: 334757932040041692
+    second: Angurasrash_Spritesheet_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 849
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df536405fab192a50800000000000000
+      internalID: 6496754377238656509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 849
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c3287111e491bd0800000000000000
+      internalID: -2659008269669745558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 849
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13294c6d6c9b56460800000000000000
+      internalID: 7234392640098439729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 849
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07511909555b0100800000000000000
+      internalID: 75247659674326798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 566
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf28c97d54d31d2d0800000000000000
+      internalID: -3255753685432761604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 566
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a387b7dc5781dd0800000000000000
+      internalID: -2515130866486199676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 566
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048c9ff290cbff050800000000000000
+      internalID: 5836590389741078592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 566
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139ba1fa1b2c2bc70800000000000000
+      internalID: 8985458274960324913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 283
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8323dd4dbe292630800000000000000
+      internalID: 3902701942682624910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 283
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1a609636edbf010800000000000000
+      internalID: 1223816242306392544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 283
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b0952f631d2de90800000000000000
+      internalID: -7002304436683338926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 283
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f6e57659b10b0d0800000000000000
+      internalID: -3409194589421146334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d540f1ea278e7e0800000000000000
+      internalID: -1736011564181070519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0215fd1684562f30800000000000000
+      internalID: 4550417408509415948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angurasrash_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 283
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4bdf8c09c45a400800000000000000
+      internalID: 334757932040041692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

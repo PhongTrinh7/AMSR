@@ -1,0 +1,944 @@
+fileFormatVersion: 2
+guid: ea1d43b0314687b4a90489e050a09cb8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 488259451169295903
+    second: AnglerAerial_Spritesheet_0
+  - first:
+      213: 4207371447642943637
+    second: AnglerAerial_Spritesheet_1
+  - first:
+      213: 2347572321623238314
+    second: AnglerAerial_Spritesheet_2
+  - first:
+      213: 1139227182251153504
+    second: AnglerAerial_Spritesheet_3
+  - first:
+      213: -3939542787794752383
+    second: AnglerAerial_Spritesheet_4
+  - first:
+      213: 7324497744054521135
+    second: AnglerAerial_Spritesheet_5
+  - first:
+      213: -9183692600029111765
+    second: AnglerAerial_Spritesheet_6
+  - first:
+      213: -8557899491049642522
+    second: AnglerAerial_Spritesheet_7
+  - first:
+      213: -201658942703815838
+    second: AnglerAerial_Spritesheet_8
+  - first:
+      213: -8548673330389979492
+    second: AnglerAerial_Spritesheet_9
+  - first:
+      213: -522391744306122500
+    second: AnglerAerial_Spritesheet_10
+  - first:
+      213: 112035272844305145
+    second: AnglerAerial_Spritesheet_11
+  - first:
+      213: 3471595447355182580
+    second: AnglerAerial_Spritesheet_12
+  - first:
+      213: 1815735256222834087
+    second: AnglerAerial_Spritesheet_13
+  - first:
+      213: 2198324157826211136
+    second: AnglerAerial_Spritesheet_14
+  - first:
+      213: 6995386226256472486
+    second: AnglerAerial_Spritesheet_15
+  - first:
+      213: 1505107338240493043
+    second: AnglerAerial_Spritesheet_16
+  - first:
+      213: -1492515233288703929
+    second: AnglerAerial_Spritesheet_17
+  - first:
+      213: 1615571095879947887
+    second: AnglerAerial_Spritesheet_18
+  - first:
+      213: 2761966596739889056
+    second: AnglerAerial_Spritesheet_19
+  - first:
+      213: 5629556568745092766
+    second: AnglerAerial_Spritesheet_20
+  - first:
+      213: -6296162377540290941
+    second: AnglerAerial_Spritesheet_21
+  - first:
+      213: -7604616730701808666
+    second: AnglerAerial_Spritesheet_22
+  - first:
+      213: 7230175592180058733
+    second: AnglerAerial_Spritesheet_23
+  - first:
+      213: -6002350695214167530
+    second: AnglerAerial_Spritesheet_24
+  - first:
+      213: -546413330015198395
+    second: AnglerAerial_Spritesheet_25
+  - first:
+      213: -1448241191666507948
+    second: AnglerAerial_Spritesheet_26
+  - first:
+      213: 3168443649271825602
+    second: AnglerAerial_Spritesheet_27
+  - first:
+      213: -8811854821039378675
+    second: AnglerAerial_Spritesheet_28
+  - first:
+      213: 1653689989663522085
+    second: AnglerAerial_Spritesheet_29
+  - first:
+      213: -7438450638805354683
+    second: AnglerAerial_Spritesheet_30
+  - first:
+      213: 4253778663286414391
+    second: AnglerAerial_Spritesheet_31
+  - first:
+      213: 8751310558479072546
+    second: AnglerAerial_Spritesheet_32
+  - first:
+      213: -4942422280583734768
+    second: AnglerAerial_Spritesheet_33
+  - first:
+      213: -3497359503545632560
+    second: AnglerAerial_Spritesheet_34
+  - first:
+      213: 7442577839011566054
+    second: AnglerAerial_Spritesheet_35
+  - first:
+      213: -5824326625717815419
+    second: AnglerAerial_Spritesheet_36
+  - first:
+      213: -4495086658399018884
+    second: AnglerAerial_Spritesheet_37
+  - first:
+      213: 4794616551081442351
+    second: AnglerAerial_Spritesheet_38
+  - first:
+      213: 4893479021670957121
+    second: AnglerAerial_Spritesheet_39
+  - first:
+      213: -4379186306606262187
+    second: AnglerAerial_Spritesheet_40
+  - first:
+      213: 3506574859501498879
+    second: AnglerAerial_Spritesheet_41
+  - first:
+      213: 978647253495820855
+    second: AnglerAerial_Spritesheet_42
+  - first:
+      213: -578044382960604246
+    second: AnglerAerial_Spritesheet_43
+  - first:
+      213: -1346510986744593143
+    second: AnglerAerial_Spritesheet_44
+  - first:
+      213: -2437876780668381535
+    second: AnglerAerial_Spritesheet_45
+  - first:
+      213: -8650234544276505970
+    second: AnglerAerial_Spritesheet_46
+  - first:
+      213: 6804668586474738274
+    second: AnglerAerial_Spritesheet_47
+  - first:
+      213: -2887769738583964038
+    second: AnglerAerial_Spritesheet_48
+  - first:
+      213: -723104722918744373
+    second: AnglerAerial_Spritesheet_49
+  - first:
+      213: -7640531813393577530
+    second: AnglerAerial_Spritesheet_50
+  - first:
+      213: -8185587295253348703
+    second: AnglerAerial_Spritesheet_51
+  - first:
+      213: 6970805510008914757
+    second: AnglerAerial_Spritesheet_52
+  - first:
+      213: 3349176285577642425
+    second: AnglerAerial_Spritesheet_53
+  - first:
+      213: -3195424237148761342
+    second: AnglerAerial_Spritesheet_54
+  - first:
+      213: 8695320822477310446
+    second: AnglerAerial_Spritesheet_55
+  - first:
+      213: 2327531781308034539
+    second: AnglerAerial_Spritesheet_56
+  - first:
+      213: 3940716352308148110
+    second: AnglerAerial_Spritesheet_57
+  - first:
+      213: 8386229446516250362
+    second: AnglerAerial_Spritesheet_58
+  - first:
+      213: -8334850619866011306
+    second: AnglerAerial_Spritesheet_59
+  - first:
+      213: 6833360859132323698
+    second: AnglerAerial_Spritesheet_60
+  - first:
+      213: -817500287318792897
+    second: AnglerAerial_Spritesheet_61
+  - first:
+      213: 1339279689719849629
+    second: AnglerAerial_Spritesheet_62
+  - first:
+      213: 8099833757992858055
+    second: AnglerAerial_Spritesheet_63
+  - first:
+      213: 3510139751133156420
+    second: AnglerAerial_Spritesheet_64
+  - first:
+      213: 15754343996719560
+    second: AnglerAerial_Spritesheet_65
+  - first:
+      213: 8657532048243399332
+    second: AnglerAerial_Spritesheet_66
+  - first:
+      213: 5517247368309561078
+    second: AnglerAerial_Spritesheet_67
+  - first:
+      213: 5649883139076514469
+    second: AnglerAerial_Spritesheet_68
+  - first:
+      213: 6080341528947643401
+    second: AnglerAerial_Spritesheet_69
+  - first:
+      213: 1540614971651270773
+    second: AnglerAerial_Spritesheet_70
+  - first:
+      213: 937190167303050900
+    second: AnglerAerial_Spritesheet_71
+  - first:
+      213: 7013385612784484386
+    second: AnglerAerial_Spritesheet_72
+  - first:
+      213: 4680321542057474712
+    second: AnglerAerial_Spritesheet_73
+  - first:
+      213: -6963747950872985792
+    second: AnglerAerial_Spritesheet_74
+  - first:
+      213: 7504499696306697179
+    second: AnglerAerial_Spritesheet_75
+  - first:
+      213: 3279475609332414543
+    second: AnglerAerial_Spritesheet_76
+  - first:
+      213: -2227084137733893992
+    second: AnglerAerial_Spritesheet_77
+  - first:
+      213: 2061771391502695713
+    second: AnglerAerial_Spritesheet_78
+  - first:
+      213: 8367632581182432970
+    second: AnglerAerial_Spritesheet_79
+  - first:
+      213: 137474251766647520
+    second: AnglerAerial_Spritesheet_80
+  - first:
+      213: -8190184365836325213
+    second: AnglerAerial_Spritesheet_81
+  - first:
+      213: 8004535002002641538
+    second: AnglerAerial_Spritesheet_82
+  - first:
+      213: -1523435099989277718
+    second: AnglerAerial_Spritesheet_83
+  - first:
+      213: -3628985404917926462
+    second: AnglerAerial_Spritesheet_84
+  - first:
+      213: -1749246501943587496
+    second: AnglerAerial_Spritesheet_85
+  - first:
+      213: 8325454705980902075
+    second: AnglerAerial_Spritesheet_86
+  - first:
+      213: 8584829724310419234
+    second: AnglerAerial_Spritesheet_87
+  - first:
+      213: 7373928547482143269
+    second: AnglerAerial_Spritesheet_88
+  - first:
+      213: 1966354785138994489
+    second: AnglerAerial_Spritesheet_89
+  - first:
+      213: -2954741424165777918
+    second: AnglerAerial_Spritesheet_90
+  - first:
+      213: 897059296989214420
+    second: AnglerAerial_Spritesheet_91
+  - first:
+      213: -2633668289591819014
+    second: AnglerAerial_Spritesheet_92
+  - first:
+      213: -2815597215649442936
+    second: AnglerAerial_Spritesheet_93
+  - first:
+      213: -5801445232919214176
+    second: AnglerAerial_Spritesheet_94
+  - first:
+      213: 4219189479372891096
+    second: AnglerAerial_Spritesheet_95
+  - first:
+      213: 3669807505491383993
+    second: AnglerAerial_Spritesheet_96
+  - first:
+      213: -1341714387500099259
+    second: AnglerAerial_Spritesheet_97
+  - first:
+      213: 608833002366230511
+    second: AnglerAerial_Spritesheet_98
+  - first:
+      213: -2404267147052968496
+    second: AnglerAerial_Spritesheet_99
+  - first:
+      213: -3952854184402886114
+    second: AnglerAerial_Spritesheet_100
+  - first:
+      213: 2025040362634479748
+    second: AnglerAerial_Spritesheet_101
+  - first:
+      213: 7968119279582279509
+    second: AnglerAerial_Spritesheet_102
+  - first:
+      213: -4656478233482973163
+    second: AnglerAerial_Spritesheet_103
+  - first:
+      213: 1876556616202650420
+    second: AnglerAerial_Spritesheet_104
+  - first:
+      213: 155567096806692961
+    second: AnglerAerial_Spritesheet_105
+  - first:
+      213: 3761708609196082866
+    second: AnglerAerial_Spritesheet_106
+  - first:
+      213: -4340622490414752600
+    second: AnglerAerial_Spritesheet_107
+  - first:
+      213: -6755253661792353901
+    second: AnglerAerial_Spritesheet_108
+  - first:
+      213: 3995739385441985770
+    second: AnglerAerial_Spritesheet_109
+  - first:
+      213: -4492345660224765727
+    second: AnglerAerial_Spritesheet_110
+  - first:
+      213: 4608766869974204665
+    second: AnglerAerial_Spritesheet_111
+  - first:
+      213: 3252772325869063043
+    second: AnglerAerial_Spritesheet_112
+  - first:
+      213: -4387680855526227380
+    second: AnglerAerial_Spritesheet_113
+  - first:
+      213: 2437520493009432281
+    second: AnglerAerial_Spritesheet_114
+  - first:
+      213: -4759729698169244286
+    second: AnglerAerial_Spritesheet_115
+  - first:
+      213: 6901903832616235814
+    second: AnglerAerial_Spritesheet_116
+  - first:
+      213: 282564197673546715
+    second: AnglerAerial_Spritesheet_117
+  - first:
+      213: 7534572447842727991
+    second: AnglerAerial_Spritesheet_118
+  - first:
+      213: -932525046226923742
+    second: AnglerAerial_Spritesheet_119
+  - first:
+      213: 8895575163608641004
+    second: AnglerAerial_Spritesheet_120
+  - first:
+      213: 7725312958273110185
+    second: AnglerAerial_Spritesheet_121
+  - first:
+      213: 4109154443275797056
+    second: AnglerAerial_Spritesheet_122
+  - first:
+      213: -3809786225130572821
+    second: AnglerAerial_Spritesheet_123
+  - first:
+      213: 854040841118068927
+    second: AnglerAerial_Spritesheet_124
+  - first:
+      213: 7787984381692487264
+    second: AnglerAerial_Spritesheet_125
+  - first:
+      213: 6417147038352625146
+    second: AnglerAerial_Spritesheet_126
+  - first:
+      213: 3019538459362985082
+    second: AnglerAerial_Spritesheet_127
+  - first:
+      213: -8513366921468909821
+    second: AnglerAerial_Spritesheet_128
+  - first:
+      213: 1749295258810202412
+    second: AnglerAerial_Spritesheet_129
+  - first:
+      213: -128318049754651874
+    second: AnglerAerial_Spritesheet_130
+  - first:
+      213: -127416094733104774
+    second: AnglerAerial_Spritesheet_131
+  - first:
+      213: 2870208715383286236
+    second: AnglerAerial_Spritesheet_132
+  - first:
+      213: 5966597064966439829
+    second: AnglerAerial_Spritesheet_133
+  - first:
+      213: -6841185024578683640
+    second: AnglerAerial_Spritesheet_134
+  - first:
+      213: -7576941518007263858
+    second: AnglerAerial_Spritesheet_0
+  - first:
+      213: -5339518379669523601
+    second: AnglerAerial_Spritesheet_1
+  - first:
+      213: 2191363930692942584
+    second: AnglerAerial_Spritesheet_2
+  - first:
+      213: -6788291610281992480
+    second: AnglerAerial_Spritesheet_3
+  - first:
+      213: 882728417506541283
+    second: AnglerAerial_Spritesheet_4
+  - first:
+      213: 396266312469436004
+    second: AnglerAerial_Spritesheet_5
+  - first:
+      213: 5228874987736105534
+    second: AnglerAerial_Spritesheet_6
+  - first:
+      213: -1855859033488672154
+    second: AnglerAerial_Spritesheet_7
+  - first:
+      213: -6191446364364853195
+    second: AnglerAerial_Spritesheet_8
+  - first:
+      213: -2882894851323816682
+    second: AnglerAerial_Spritesheet_9
+  - first:
+      213: -4730279844485783459
+    second: AnglerAerial_Spritesheet_10
+  - first:
+      213: -833194353859714869
+    second: AnglerAerial_Spritesheet_11
+  - first:
+      213: -2561054129963925740
+    second: AnglerAerial_Spritesheet_12
+  - first:
+      213: 1347932719002728999
+    second: AnglerAerial_Spritesheet_13
+  - first:
+      213: 2535881888087991746
+    second: AnglerAerial_Spritesheet_14
+  - first:
+      213: 649260612239008346
+    second: AnglerAerial_Spritesheet_15
+  - first:
+      213: 2479175621654565227
+    second: AnglerAerial_Spritesheet_16
+  - first:
+      213: 9084376971927067960
+    second: AnglerAerial_Spritesheet_17
+  - first:
+      213: -2160613544878068918
+    second: AnglerAerial_Spritesheet_18
+  - first:
+      213: -3044752455103137637
+    second: AnglerAerial_Spritesheet_19
+  - first:
+      213: -651358661890789682
+    second: AnglerAerial_Spritesheet_20
+  - first:
+      213: 5888601494757601924
+    second: AnglerAerial_Spritesheet_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d944f65db49d690800000000000000
+      internalID: -7576941518007263858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63f02cd25836e5b0800000000000000
+      internalID: -5339518379669523601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa7e8672e9496e10800000000000000
+      internalID: 2191363930692942584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee90611fb42bc1a0800000000000000
+      internalID: -6788291610281992480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eebe9e91d4104c00800000000000000
+      internalID: 882728417506541283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466d1379c12df7500800000000000000
+      internalID: 396266312469436004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e328feaf812b09840800000000000000
+      internalID: 5228874987736105534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a35b3ba0aae36e0800000000000000
+      internalID: -1855859033488672154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5303626d550931aa0800000000000000
+      internalID: -6191446364364853195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6159a0e2866edf7d0800000000000000
+      internalID: -2882894851323816682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d502c352b8baa5eb0800000000000000
+      internalID: -4730279844485783459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0a45d4626ef64f0800000000000000
+      internalID: -833194353859714869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd08738aa59d2030800000000000000
+      internalID: 3471595447355182580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad90596899c23910800000000000000
+      internalID: 1815735256222834087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d1460ac24028e10800000000000000
+      internalID: 2198324157826211136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a96daaa5ba941160800000000000000
+      internalID: 6995386226256472486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnglerAerial_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f588a4562733e410800000000000000
+      internalID: 1505107338240493043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
