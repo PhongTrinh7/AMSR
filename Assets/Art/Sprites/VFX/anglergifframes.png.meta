@@ -1,0 +1,596 @@
+fileFormatVersion: 2
+guid: 6da7b1adbf7d9d8429645317a07e9841
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4773057582696744746
+    second: anglergifframes_0
+  - first:
+      213: -8119095598498013501
+    second: anglergifframes_1
+  - first:
+      213: 2511977922234127893
+    second: anglergifframes_2
+  - first:
+      213: -5591247965335567032
+    second: anglergifframes_3
+  - first:
+      213: -3193210095659375712
+    second: anglergifframes_4
+  - first:
+      213: -9118510520224853383
+    second: anglergifframes_5
+  - first:
+      213: -6975363411519687653
+    second: anglergifframes_6
+  - first:
+      213: -2086987166918383882
+    second: anglergifframes_7
+  - first:
+      213: 6697660371187633349
+    second: anglergifframes_8
+  - first:
+      213: -1150955398703305407
+    second: anglergifframes_9
+  - first:
+      213: -8042969312556280910
+    second: anglergifframes_10
+  - first:
+      213: -5793544339233501255
+    second: anglergifframes_11
+  - first:
+      213: -467134461720287765
+    second: anglergifframes_12
+  - first:
+      213: 4022843001818331216
+    second: anglergifframes_13
+  - first:
+      213: -1834384877600398142
+    second: anglergifframes_14
+  - first:
+      213: 5085911794808517364
+    second: anglergifframes_15
+  - first:
+      213: -3201230042715645957
+    second: anglergifframes_16
+  - first:
+      213: -5624468066125227379
+    second: anglergifframes_17
+  - first:
+      213: 1860269865420221064
+    second: anglergifframes_18
+  - first:
+      213: 5559905775346094737
+    second: anglergifframes_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anglergifframes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 918
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d830e2da61b2cdb0800000000000000
+      internalID: -4773057582696744746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_1
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 918
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce961ae19d235f80800000000000000
+      internalID: -8119095598498013501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_2
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 918
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516936a7c965cd220800000000000000
+      internalID: 2511977922234127893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_3
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 918
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8454c076995e762b0800000000000000
+      internalID: -5591247965335567032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_4
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 918
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3280b16507fa3d0800000000000000
+      internalID: -3193210095659375712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972d5596efa847180800000000000000
+      internalID: -9118510520224853383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_6
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 612
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14bc1d2fe7823f90800000000000000
+      internalID: -6975363411519687653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_7
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 612
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6e701aa388903e0800000000000000
+      internalID: -2086987166918383882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_8
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 612
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc89d23f9ed2fc50800000000000000
+      internalID: 6697660371187633349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_9
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 612
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14da8f3b92cf600f0800000000000000
+      internalID: -1150955398703305407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b317b11602a16090800000000000000
+      internalID: -8042969312556280910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_11
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 306
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf03857e12399fa0800000000000000
+      internalID: -5793544339233501255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_12
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 306
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5a1da9ea76489f0800000000000000
+      internalID: -467134461720287765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_13
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 306
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0583c8e656204d730800000000000000
+      internalID: 4022843001818331216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_14
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 306
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4a74d3ca4fa86e0800000000000000
+      internalID: -1834384877600398142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2f780c4d9c49640800000000000000
+      internalID: 5085911794808517364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_16
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf710abac32f293d0800000000000000
+      internalID: -3201230042715645957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_17
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 0
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ad314f710e1f1b0800000000000000
+      internalID: -5624468066125227379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_18
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 0
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a6cb2269101d910800000000000000
+      internalID: 1860269865420221064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anglergifframes_19
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 0
+        width: 544
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192952458d0c82d40800000000000000
+      internalID: 5559905775346094737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -38,7 +38,7 @@ public class Character : MonoBehaviour
     protected int currentHealth;
 
     //I-frames
-    protected bool isInvincible;
+    public bool isInvincible;
     public bool counter;
 
     //Collision
