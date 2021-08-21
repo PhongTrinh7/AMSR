@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 6231391270508860188}
   - component: {fileID: 7813387350763290130}
   - component: {fileID: 2869087165072708556}
+  - component: {fileID: 5508642066751946523}
   m_Layer: 8
   m_Name: AnglerMan
   m_TagString: Player
@@ -142,13 +143,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985c2bca36529e94b810719265fd1ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dummy: 0
   speed: 5
   jumpHeight: 15
   jumping: 0
   cantMove: 0
   grounded: 0
   maxHealth: 100
-  timeInvincible: 2
+  isInvincible: 0
+  counter: 0
   rb: {fileID: 0}
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
@@ -158,20 +161,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 0.8
-  attackDamage: 40
-  cube: {fileID: 2196886427941220350}
   isAttacking: 0
   isAirAttacking: 0
   hitSparks: {fileID: 8956771229110071260, guid: 309a2d394c3fb574f9f5d23f5a51b943,
     type: 3}
-  bodyAttack: 0
-  bodyAttackTime: 0
   hitForce: 3
   launchForce: 17
   substitution: {fileID: 4364355641978077531, guid: e983ce47ba69ea94ebcf498be63e5745,
     type: 3}
   sub: 0
   portrait: {fileID: 0}
+  sphere: {fileID: 0}
   stand: {fileID: 3268769555783499621, guid: d69b7af5067770f4db5dc593ef76bf9a, type: 3}
   anglaura: {fileID: 5517426512003100313}
   healthBar: {fileID: 0}
@@ -271,10 +271,24 @@ BoxCollider:
   m_GameObject: {fileID: 4113528657177752380}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.1503456, y: 2.2172384, z: 0.2}
   m_Center: {x: -0.048456788, y: 1.0559855, z: 0}
+--- !u!136 &5508642066751946523
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4113528657177752380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.61228955
+  m_Height: 2.2492523
+  m_Direction: 1
+  m_Center: {x: -0.053123713, y: 1.0767376, z: 0}
 --- !u!1001 &1121054131214848912
 PrefabInstance:
   m_ObjectHideFlags: 0

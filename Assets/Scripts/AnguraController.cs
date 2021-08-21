@@ -1,12 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnguraController : Character
 {
+    public AnglerAgent agent;
+
     public static AnguraController Instance;
     public LTNGO stand;
+    public LTNGO ult;
     public GameObject anglaura;
+    public Projectile anglerang;
+    public int anglerangs;
+    public Text anglerangsText;
 
     //UI
     public HealthBar healthBar;
@@ -21,6 +28,10 @@ public class AnguraController : Character
 
         set
         {
+            if (value < currentHealth)
+            {
+                //agent.AddReward(value - currentHealth);
+            }
             if (value != currentHealth)
             {
                 Energy += 5;
@@ -47,7 +58,14 @@ public class AnguraController : Character
 
         set
         {
+            if (value >= 100 && energy < 100)
+            {
+                AudioManager.Instance.Play("Charged");
+            }
             energy = Mathf.Clamp(value, 0, 100);
+
+
+            GameManager.Instance.ultPrompt.SetActive(energy == 100);
             energyBar.SetCurrentEnergy(energy);
             anglaura.SetActive(energy >= 25);
         }
@@ -66,7 +84,8 @@ public class AnguraController : Character
         base.Start();
 
         healthBar.SetMaxHealth(maxHealth);
-        Energy = 0;
+        Energy = 100;
+        anglerangsText.text = "x" + anglerangs;
     }
 
     // Update is called once per frame
@@ -79,10 +98,15 @@ public class AnguraController : Character
 
         //Energy++;
 
+        if (Input.GetButtonDown("Ultimate") || Input.GetButtonDown("Ultimate"))
+        {
+            AnglerUlt();
+        }
+
         base.Update();
         if (sub)
         {
-            if (Input.GetButton("Fire3"))
+            if (Input.GetButtonDown("Fire3"))
             {
                 if (Energy >= 25)
                 {
@@ -108,6 +132,11 @@ public class AnguraController : Character
                 transform.localScale = new Vector3(1, 1, 1);
             }
 
+            if (Input.GetButtonDown("Anglerang"))
+            {
+                animator.SetTrigger("Throw");
+            }
+
             if (Input.GetButtonDown("Fire2"))
             {
                 if (Energy >= 25)
@@ -115,6 +144,10 @@ public class AnguraController : Character
                     AudioManager.Instance.PlayOneShot("Revengeance");
                     Instantiate(stand, rb.position + new Vector3(lookDirection.x, .5f, 0), Quaternion.identity).Direction(lookDirection.x);
                     Energy -= 25;
+                }
+                else
+                {
+                    AudioManager.Instance.Play("Nope");
                 }
             }
 
@@ -127,6 +160,10 @@ public class AnguraController : Character
                     {
                         cantMove = true;
                         animator.Play("AnglerRunSlash");
+                    }
+                    else
+                    {
+                        AerialAttack();
                     }
                     return;
                 }
@@ -153,12 +190,19 @@ public class AnguraController : Character
             if (Input.GetButtonDown("Fire3"))
             {
                 animator.SetTrigger("Counter");
+                animator.SetBool("Blocking", true);
             }
         }
         else
         {
             hori = 0;
             verti = 0;
+        }
+
+        if (Input.GetButtonUp("Fire3"))
+        {
+            animator.SetBool("Blocking", false);
+            BlockFrames(0);
         }
 
         Vector3 move = new Vector3(hori, 0, verti);
@@ -185,6 +229,7 @@ public class AnguraController : Character
         AudioManager.Instance.PlayOneShot("Hit");
         col.GetComponent<Character>().Health -= damage;
         Energy += damage;
+        //agent.AddReward(damage);
         //BodyAttackEnd();
 
         StartCoroutine(col.GetComponent<Character>().HitStop(stopTime, launch));
@@ -201,12 +246,35 @@ public class AnguraController : Character
     public override void Deflect()
     {
         base.Deflect();
-
+        //agent.AddReward(5);
         Energy += 5;
     }
 
-    public void PlaySound(string s)
+    protected void AnglerUlt()
     {
-        AudioManager.Instance.PlayOneShot(s);
+        if (Energy < 100)
+        {
+            AudioManager.Instance.Play("Nope");
+            return;
+        }
+        Energy -= 100;
+        animator.SetTrigger("Ultimate");
+        StopAllCoroutines();
+        StartCoroutine(GameManager.Instance.CameraTarget(gameObject, 1f));
+    }
+
+    public void Anglerection()
+    {
+        Instantiate(ult, rb.position + new Vector3(-lookDirection.x, .5f, 0), Quaternion.identity).Direction(lookDirection.x);
+    }
+
+    public void Anglerang()
+    {
+        if (anglerangs > 0)
+        {
+            Instantiate(anglerang, rb.position + new Vector3(lookDirection.x * (attackRange + .2f), 1.5f, 0), Quaternion.identity).direction = (int)lookDirection.x;
+            anglerangs--;
+            anglerangsText.text = "x" + anglerangs;
+        }
     }
 }

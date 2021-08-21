@@ -44,4 +44,9 @@ public class Dummy : Character
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
 
     }
+
+    protected override void Death()
+    {
+        Dispose();
+    }
 }

@@ -13,8 +13,8 @@ public class Character : MonoBehaviour
     public bool cantMove;
     public bool grounded;
 
-    protected float hori;
-    protected float verti;
+    public float hori;
+    public float verti;
 
 
     //Stats
@@ -31,7 +31,7 @@ public class Character : MonoBehaviour
             currentHealth = Mathf.Clamp(value, 0, maxHealth);
             if (currentHealth == 0)
             {
-                Dispose();
+                Death();
             }
         }
     }
@@ -70,12 +70,14 @@ public class Character : MonoBehaviour
 
     public GameObject sphere;
 
+    public bool blocking;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody>();
-        col = GetComponent<BoxCollider>();
-        col2 = GetComponent<CapsuleCollider>();
+        //col = GetComponent<BoxCollider>();
+        col = GetComponent<CapsuleCollider>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -133,7 +135,7 @@ public class Character : MonoBehaviour
         rb.AddForce(new Vector3(0, jumpHeight, 0), ForceMode.Impulse);
     }
 
-    protected virtual void GroundAttack()
+    public virtual void GroundAttack()
     {
         isAttacking = true;
     }
@@ -247,8 +249,14 @@ public class Character : MonoBehaviour
 
         if (!col.GetComponent<Character>().counter)
         {
+            if (col.GetComponent<Character>().blocking)
+            {
+                col.attachedRigidbody.AddForce((Vector3)force/2, ForceMode.Impulse);
+                col.GetComponent<Character>().Health -= damage/2;
+                yield break;
+            }
             Instantiate(hitSparks, col.transform.position + new Vector3(0, 1.5f, 0), Quaternion.identity);
-            AudioManager.Instance.PlayOneShot("Hit");
+            AudioManager.Instance.Play("Hit");
 
             animator.speed = 0;
             rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
@@ -267,7 +275,10 @@ public class Character : MonoBehaviour
         {
             //animator.Play("AnglerDeflect");
             animator.SetTrigger("Deflect");
-            Debug.Log("bing");
+        }
+        else if (blocking)
+        {
+            Block();
         }
         else
         {
@@ -282,6 +293,7 @@ public class Character : MonoBehaviour
                 animator.SetTrigger("Hit");
             }
 
+            //StopAllCoroutines();
             animator.speed = 0;
             rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
             yield return new WaitForSecondsRealtime(stopTime);
@@ -342,6 +354,13 @@ public class Character : MonoBehaviour
         //rb.AddForce(-lookDirection * launchForce, ForceMode.Impulse);
     }
 
+    public virtual void Block()
+    {
+        AudioManager.Instance.PlayOneShot("Block");
+
+        Instantiate(Resources.Load("DeflectEffect"), rb.position + new Vector3(lookDirection.x * (attackRange + .2f), 1.5f, 0), Quaternion.identity);
+    }
+
     public void CounterFrames(int b)
     {
         if (b == 1)
@@ -355,10 +374,37 @@ public class Character : MonoBehaviour
         }
     }
 
-    protected void Dispose()
+    public void BlockFrames(int b)
+    {
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+
+        if (b == 1)
+        {
+            blocking = true;
+            cantMove = true;
+        }
+        else
+        {
+            blocking = false;
+        }
+    }
+
+    public void Dispose()
     {
         transform.position = new Vector3(0, -20, 0);
         Destroy(gameObject, 1f);
     }
 
+    protected virtual void Death()
+    {
+        StopAllCoroutines();
+        this.enabled = false;
+        gameObject.layer = 0;
+        animator.SetTrigger("Death");
+    }
+
+    public void PlaySound(string s)
+    {
+        AudioManager.Instance.PlayOneShot(s);
+    }
 }

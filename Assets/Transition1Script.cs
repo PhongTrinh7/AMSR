@@ -7,7 +7,7 @@ public class Transition1Script : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        AnguraController.Instance.cantMove = false;
+        //AnguraController.Instance.cantMove = false;
         AnguraController.Instance.isAttacking = false;
         AnguraController.Instance.isAirAttacking = false;
     }

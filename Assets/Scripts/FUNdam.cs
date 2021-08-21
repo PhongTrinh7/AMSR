@@ -40,20 +40,22 @@ public class FUNdam : Enemy
     {
         Vector3 targetPos = AnguraController.Instance.transform.position;
 
-        if (Mathf.Abs(transform.position.z - targetPos.z) <= 0.4f && attackTimer <= 0)
+        if (Mathf.Abs(transform.position.z - targetPos.z) <= xclose && attackTimer <= 0)
         {
-            lookDirection.Set(targetPos.x - transform.position.x, 0, 0);
-            lookDirection.Normalize();
-            transform.localScale = new Vector3(lookDirection.x, 1, 1);
 
-            if (Mathf.Abs(transform.position.x - targetPos.x) < 4)
+            if (Mathf.Abs(transform.position.x - targetPos.x) < xclose)
             {
-                animator.SetTrigger("Shield Bash");
+                if (Random.Range(0, 2) == 1) {
+                    animator.SetTrigger("Shield Bash");
+                }
+                else {
+                    animator.SetTrigger("JumpShot");
+                }
                 attackTimer += attackCoolDown/2;
                 cantMove = true;
                 isAttacking = true;
             }
-            else if (Mathf.Abs(transform.position.x - targetPos.x) >= 4 && Mathf.Abs(transform.position.x - targetPos.x) < 10)
+            else if (Mathf.Abs(transform.position.x - targetPos.x) >= xclose && Mathf.Abs(transform.position.x - targetPos.x) < xfar)
             {
                 animator.SetTrigger("Shoot");
                 attackTimer += attackCoolDown;
@@ -77,19 +79,25 @@ public class FUNdam : Enemy
 
         spriteRenderer.material.SetFloat("_FlashAmount", 1);
 
+        //StopAllCoroutines();
+
         animator.speed = 0;
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
         yield return new WaitForSecondsRealtime(stopTime);
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         animator.speed = 1;
+        
 
         spriteRenderer.material.SetFloat("_FlashAmount", 0);
 
         cantMove = false;
+
+        yield return null;
     }
 
-    void Death()
+    protected override void Death()
     {
+        StopAllCoroutines();
         this.enabled = false;
         gameObject.layer = 0;
         animator.SetTrigger("Death");

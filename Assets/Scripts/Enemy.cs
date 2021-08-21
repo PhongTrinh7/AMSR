@@ -81,8 +81,6 @@ public class Enemy : Character
         {
             hori = xdirection;
             verti = ydirection;
-            Debug.Log(hori);
-            Debug.Log(verti);
         }
 
         Vector3 move = new Vector3(hori, 0, verti);

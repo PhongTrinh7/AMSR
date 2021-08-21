@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7087077425835551945}
   - component: {fileID: 7087077425835551947}
   - component: {fileID: 1624107657420930375}
+  - component: {fileID: 3363856254446091727}
   m_Layer: 8
   m_Name: FUNdam
   m_TagString: Enemy
@@ -125,12 +126,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7087077425835551941}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 01571ba68fb2dad46aa03094ab219579, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.7899323, y: 3.0145507, z: 0.43642014}
-  m_Center: {x: 0.06268215, y: 1.3997037, z: 0.02300036}
+  m_Size: {x: 1.7899323, y: 2.8886337, z: 0.43642014}
+  m_Center: {x: 0.06268215, y: 1.4626622, z: 0.02300036}
 --- !u!54 &7087077425835551945
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -184,7 +185,8 @@ MonoBehaviour:
   jumping: 0
   cantMove: 0
   grounded: 0
-  maxHealth: 60
+  maxHealth: 35
+  isInvincible: 0
   counter: 0
   rb: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -194,13 +196,13 @@ MonoBehaviour:
   damageLayers:
     serializedVersion: 2
     m_Bits: 256
-  attackRange: 0.7
+  attackRange: 1
   isAttacking: 0
   isAirAttacking: 0
   hitSparks: {fileID: 8956771229110071260, guid: 309a2d394c3fb574f9f5d23f5a51b943,
     type: 3}
   hitForce: 5
-  launchForce: 25
+  launchForce: 15
   substitution: {fileID: 0}
   sub: 0
   portrait: {fileID: 0}
@@ -215,6 +217,20 @@ MonoBehaviour:
     type: 3}
   laser: {fileID: 1649764998974681990, guid: 80c7072eb7d0a0f478c52e184555d313, type: 3}
   attackOrigin: {fileID: 2137555973060869350}
+--- !u!136 &3363856254446091727
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7087077425835551941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.84163
+  m_Height: 2.9623225
+  m_Direction: 1
+  m_Center: {x: 0.04927218, y: 1.4654368, z: 0}
 --- !u!1001 &3690892500185175108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,6 +368,16 @@ PrefabInstance:
       propertyPath: ColorModule.gradient.maxGradient.key3.g
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4836618493367968033, guid: 17c29387e3cf44345987d4628cc618af,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.308
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836618493367968033, guid: 17c29387e3cf44345987d4628cc618af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.196
+      objectReference: {fileID: 0}
     - target: {fileID: 4836618493367968041, guid: 17c29387e3cf44345987d4628cc618af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -407,6 +433,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4836618493367968041, guid: 17c29387e3cf44345987d4628cc618af,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836618493367968041, guid: 17c29387e3cf44345987d4628cc618af,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4836618493368466697, guid: 17c29387e3cf44345987d4628cc618af,
         type: 3}
       propertyPath: m_Name
@@ -431,6 +467,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.72240925
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836618493378605097, guid: 17c29387e3cf44345987d4628cc618af,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836618493378605097, guid: 17c29387e3cf44345987d4628cc618af,
+        type: 3}
+      propertyPath: m_Range
+      value: 3.41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c29387e3cf44345987d4628cc618af, type: 3}

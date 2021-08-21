@@ -1,0 +1,29 @@
+{
+    "AnglerAgent": {
+        "checkpoints": [
+            {
+                "steps": 200,
+                "file_path": "results\\ppo\\AnglerAgent\\AnglerAgent-200.onnx",
+                "reward": -0.2,
+                "creation_time": 1629276294.7128708,
+                "auxillary_file_paths": [
+                    "results\\ppo\\AnglerAgent\\AnglerAgent-200.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 200,
+            "file_path": "results\\ppo\\AnglerAgent.onnx",
+            "reward": -0.2,
+            "creation_time": 1629276294.7128708,
+            "auxillary_file_paths": [
+                "results\\ppo\\AnglerAgent\\AnglerAgent-200.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.8.2+cpu"
+    }
+}

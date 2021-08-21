@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8459061902139108929}
   - component: {fileID: 8459061902139108942}
   - component: {fileID: 8459061902139108931}
+  - component: {fileID: 4513998375813114861}
   - component: {fileID: 8459061902139108928}
   - component: {fileID: 8459061902139108930}
   - component: {fileID: 2423350578732370568}
@@ -96,10 +97,24 @@ BoxCollider:
   m_GameObject: {fileID: 8459061902139108940}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.3009605, y: 2.2745657, z: 0.2}
   m_Center: {x: -0.0024175644, y: 1.0297112, z: 0}
+--- !u!136 &4513998375813114861
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459061902139108940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.61844486
+  m_Height: 2.2413054
+  m_Direction: 1
+  m_Center: {x: -0.0042923093, y: 1.0070403, z: 0}
 --- !u!54 &8459061902139108928
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -154,6 +169,7 @@ MonoBehaviour:
   cantMove: 0
   grounded: 0
   maxHealth: 20
+  isInvincible: 0
   counter: 0
   rb: {fileID: 0}
   spriteRenderer: {fileID: 0}

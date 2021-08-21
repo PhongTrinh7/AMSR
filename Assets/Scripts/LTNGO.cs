@@ -73,7 +73,7 @@ public class LTNGO : MonoBehaviour
     protected IEnumerator HitStop(float stopTime, Collider col, Vector2 force)
     {
         Instantiate(hitSparks, col.transform.position + new Vector3(0, 1.5f, 0), Quaternion.identity);
-        AudioManager.Instance.PlayOneShot("Hit");
+        AudioManager.Instance.Play("Hit");
         animator.speed = 0;
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionY;
         yield return new WaitForSecondsRealtime(stopTime);
@@ -86,6 +86,23 @@ public class LTNGO : MonoBehaviour
         }
 
         col.attachedRigidbody.AddForce(force, ForceMode.Impulse);
+    }
+
+    public void Flash()
+    {
+        GameManager.Instance.StartCoroutine(GameManager.Instance.Trip(2f));
+        AudioManager.Instance.PlayOneShot("Tokiwotomare");
+        Vector3 attackDirPoint = rb.position + new Vector3(0, 1.5f, 0);
+
+        Collider[] hitEnemies = Physics.OverlapSphere(attackDirPoint, 30, damageLayers);
+        foreach (Collider enemy in hitEnemies)
+        {
+            if (enemy.tag != "Player")
+            {
+                enemy.GetComponent<Character>().Health -= 10;
+                enemy.GetComponent<Character>().StartCoroutine(enemy.GetComponent<Character>().HitStop(5f, false));
+            }
+        }
     }
 
     private void Seppukku()

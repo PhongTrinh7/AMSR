@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4364355641978077476}
   - component: {fileID: 3080194103770168247}
   - component: {fileID: 3821507402492847261}
+  - component: {fileID: 5446544787473217817}
   m_Layer: 8
   m_Name: Substituion
   m_TagString: Untagged
@@ -110,7 +111,7 @@ BoxCollider:
   m_GameObject: {fileID: 4364355641978077531}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.3012649, y: 1.689134, z: 0.2}
   m_Center: {x: 0.32620555, y: 0.7161365, z: 0}
@@ -133,7 +134,8 @@ MonoBehaviour:
   cantMove: 0
   grounded: 0
   maxHealth: 100
-  timeInvincible: 2
+  isInvincible: 0
+  counter: 0
   rb: {fileID: 0}
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
@@ -143,17 +145,27 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 1.7
-  attackDamage: 40
-  cube: {fileID: 0}
   isAttacking: 0
   isAirAttacking: 0
   hitSparks: {fileID: 8956771229110071260, guid: 309a2d394c3fb574f9f5d23f5a51b943,
     type: 3}
-  bodyAttack: 0
-  bodyAttackTime: 0
   hitForce: 0
   launchForce: 0
   substitution: {fileID: 0}
   sub: 0
   portrait: {fileID: 0}
   sphere: {fileID: 0}
+--- !u!136 &5446544787473217817
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4364355641978077531}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.66027516
+  m_Height: 1.7362099
+  m_Direction: 1
+  m_Center: {x: 0.31565797, y: 0.70739925, z: 0}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Manager<GameManager>
 {
@@ -24,7 +25,9 @@ public class GameManager : Manager<GameManager>
     public CinemachineVirtualCamera vcam;
     public PostProcessVolume ppv;
     public GameObject wasted;
+    public GameObject lsdFilter;
     public bool gameOver;
+    public GameObject ultPrompt;
 
     public int Enemies
     {
@@ -40,7 +43,8 @@ public class GameManager : Manager<GameManager>
             {
                 StartDialogue();
                 fundam.SetActive(true);
-                StartCoroutine(CameraTarget(fundam));
+                //StopAllCoroutines();
+                StartCoroutine(CameraTarget(fundam, 2f));
             }
 
             if (enemies == -1)
@@ -56,6 +60,7 @@ public class GameManager : Manager<GameManager>
     void Start()
     {
         Time.timeScale = 1.1f;
+        Time.fixedDeltaTime = 0.02f;
 
         Physics.gravity = new Vector3(0, -27F, 0);
 
@@ -84,16 +89,14 @@ public class GameManager : Manager<GameManager>
         }
 
         
-        if (Input.GetKeyDown("m"))
+        if (gameOver)
         {
-            StartDialogue();
+            if (Input.GetButtonDown("Jump")){ 
+        
+                Debug.Log("Restart");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
-
-        /*
-        if (bFlip)
-        {
-            StandoPowa();
-        }*/
     }
 
     public void StartDialogue()
@@ -185,18 +188,25 @@ public class GameManager : Manager<GameManager>
         }
     }
 
-    IEnumerator CameraTarget(GameObject go)
+    public IEnumerator CameraTarget(GameObject go, float time=2f)
     {
         while (dialoguing)
             yield return null;
 
-        vcam.Follow = go.transform;
-        vcam.LookAt = go.transform;
+        //StopAllCoroutines();
 
-        yield return new WaitForSeconds(2f);
+        vcam.Follow = go.transform;
+        //vcam.LookAt = go.transform;
+
+        float dist = vcam.GetCinemachineComponent<CinemachineFramingTransposer>().m_CameraDistance;
+        vcam.GetCinemachineComponent<CinemachineFramingTransposer>().m_CameraDistance = 40f;
+
+        yield return new WaitForSeconds(time);
+
+        vcam.GetCinemachineComponent<CinemachineFramingTransposer>().m_CameraDistance = dist;
 
         vcam.Follow = AnguraController.Instance.transform;
-        vcam.LookAt = AnguraController.Instance.transform;
+        //vcam.LookAt = AnguraController.Instance.transform;
     }
 
     public void GameOver()
@@ -219,10 +229,19 @@ public class GameManager : Manager<GameManager>
             ppv.enabled = true;
             Time.timeScale = .1f;
             Time.fixedDeltaTime = .1f;
-            this.enabled = false;
+            //this.enabled = false;
             wasted.SetActive(true);
             gameOver = true;
         }
         AudioManager.Instance.Play("Grief");
+    }
+
+    public IEnumerator Trip(float time)
+    {
+        lsdFilter.SetActive(true);
+
+        yield return new WaitForSecondsRealtime(time);
+
+        //lsdFilter.SetActive(false);
     }
 }

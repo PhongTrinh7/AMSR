@@ -10,17 +10,19 @@ public class Projectile : MonoBehaviour
     public float duration;
     public int damage;
     public bool knock;
+    public LayerMask damageLayers;
 
     private void OnTriggerEnter(Collider other)
     {
-        Character c = other.GetComponent<Character>();
-        if (c != null && c.counter)
+        MCharacter c = other.GetComponent<MCharacter>();
+
+        if (c != null && c.parry)
         {
-            c.StartCoroutine(c.HitStop(.2f));
             direction = -direction;
             return;
         }
 
+        Debug.Log(other);
         Destroy(gameObject);
     }
 
@@ -50,13 +52,17 @@ public class Projectile : MonoBehaviour
     private void OnDestroy()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
-        foreach (Collider col in Physics.OverlapSphere(transform.position, 1))
+
+        foreach (Collider col in Physics.OverlapSphere(transform.position, 1, damageLayers))
         {
-            Character c = col.GetComponent<Character>();
+            MCharacter c = col.GetComponent<MCharacter>();
             if (c != null)
             {
-                c.Health -= damage;
-                c.StartCoroutine(c.HitStop((float) damage/10, knock));
+                if (!c.invincible)
+                {
+                    c.Health -= damage;
+                    c.StartCoroutine(c.GetHit(GetComponent<BoxCollider>(), damage, Vector3.up));
+                }
             }
         }
     }
