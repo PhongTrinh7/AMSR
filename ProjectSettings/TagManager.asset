@@ -16,14 +16,14 @@ TagManager:
   - UI
   - 
   - 
-  - Enemy
+  - Character
   - Particles
   - Trash
   - PostProcess
   - NonPP
   - Pixel
-  - 
-  - 
+  - PlayerWalls
+  - Projectiles
   - 
   - 
   - 

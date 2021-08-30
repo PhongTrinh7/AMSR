@@ -228,21 +228,42 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: Deflect
+    functionName: AnimAttackDamage
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 0.2
+    floatParameter: 0
+    intParameter: 5
+    messageOptions: 0
+  - time: 0
+    functionName: AnimPlaySound
+    data: CloseOne
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0
-    functionName: CounterFrames
+    functionName: AnimParry
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
+  - time: 0
+    functionName: AnimAttackHitBox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 2
+    messageOptions: 0
+  - time: 0.083333336
+    functionName: AnimAttackReset
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.4166667
-    functionName: CounterFrames
+    functionName: AnimParry
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

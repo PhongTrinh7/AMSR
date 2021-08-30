@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MCEnemy : MCharacter
 {
@@ -17,12 +18,16 @@ public class MCEnemy : MCharacter
 
     public Transform target = null;
 
+    protected override void Start()
+    {
+        base.Start();
+        //Physics.IgnoreLayerCollision(8, 14);
+    }
+
     // Update is called once per frame
     protected override void Update()
     {
         base.Update();
-
-        Debug.Log(1);
 
         timer -= Time.deltaTime;
         attackTimer -= Time.deltaTime;
@@ -105,21 +110,9 @@ public class MCEnemy : MCharacter
         }
     }
 
-    public override IEnumerator GetHit(Collider tori, float damage, Vector3 direction, bool launch = true)
+    public override IEnumerator GetHit(Collider tori, float damage, Vector3 direction, bool launch = true, float hitStopMult=1)
     {
-
-        if (launch)
-        {
-            animator.SetTrigger("Launched");
-        }
-        else
-        {
-            animator.SetTrigger("Hit");
-        }
-
-        yield return HitStop(damage);
-
-        GetLaunched(direction);
+        yield return base.GetHit(tori, damage, direction, launch, hitStopMult);
 
         if (tori != null && tori.CompareTag("Player"))
         {
@@ -136,6 +129,18 @@ public class MCEnemy : MCharacter
 
         lookDirection = (int) Mathf.Sign(target.position.x - transform.position.x);
         transform.localScale = new Vector3(lookDirection, 1, 1);
+    }
+
+    protected override void Death()
+    {
+        animator.SetTrigger("Death");
+    }
+
+    protected override void Dispose()
+    {
+        GameManager.Instance.Enemies--;
+
+        base.Dispose();
     }
 }
 

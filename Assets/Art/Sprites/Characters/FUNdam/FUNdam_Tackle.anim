@@ -175,6 +175,9 @@ AnimationClip:
     - time: 1.5833334
       value: {fileID: 935620134872651768, guid: 4f9fc530217cdd44f9b66ef75be5de20,
         type: 3}
+    - time: 1.8333334
+      value: {fileID: 935620134872651768, guid: 4f9fc530217cdd44f9b66ef75be5de20,
+        type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -231,12 +234,13 @@ AnimationClip:
     - {fileID: 1645872612347053126, guid: 4f9fc530217cdd44f9b66ef75be5de20, type: 3}
     - {fileID: -1287851084882305095, guid: 4f9fc530217cdd44f9b66ef75be5de20, type: 3}
     - {fileID: 935620134872651768, guid: 4f9fc530217cdd44f9b66ef75be5de20, type: 3}
+    - {fileID: 935620134872651768, guid: 4f9fc530217cdd44f9b66ef75be5de20, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.625
+    m_StopTime: 1.875
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -446,23 +450,23 @@ AnimationClip:
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: 5
+    intParameter: 2
     messageOptions: 0
   - time: 0.5
     functionName: AnimAttackKnockback
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 2
+    floatParameter: 1.5
     intParameter: 2
     messageOptions: 0
-  - time: 0.6666667
+  - time: 0.75
     functionName: AnimAttackHitBox
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 2
     messageOptions: 0
-  - time: 1.0833334
+  - time: 1.125
     functionName: AnimAttackReset
     data: 
     objectReferenceParameter: {fileID: 0}

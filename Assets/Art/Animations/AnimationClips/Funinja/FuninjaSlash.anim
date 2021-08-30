@@ -66,6 +66,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.9166667
         value: {x: 3.86, y: 0, z: 0}
+        inSlope: {x: 0.78000003, y: 0, z: 0}
+        outSlope: {x: 0.78000003, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 1.1666666
+        value: {x: 4, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -107,6 +116,9 @@ AnimationClip:
     - time: 1
       value: {fileID: -2256113868811835667, guid: 177f4aae3ef89ff4aadc0c1fb6690d7d,
         type: 3}
+    - time: 1.3333334
+      value: {fileID: -2256113868811835667, guid: 177f4aae3ef89ff4aadc0c1fb6690d7d,
+        type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -142,12 +154,13 @@ AnimationClip:
     - {fileID: -8446250352476341223, guid: 177f4aae3ef89ff4aadc0c1fb6690d7d, type: 3}
     - {fileID: -2256113868811835667, guid: 177f4aae3ef89ff4aadc0c1fb6690d7d, type: 3}
     - {fileID: -2256113868811835667, guid: 177f4aae3ef89ff4aadc0c1fb6690d7d, type: 3}
+    - {fileID: -2256113868811835667, guid: 177f4aae3ef89ff4aadc0c1fb6690d7d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0833334
+    m_StopTime: 1.4166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -214,6 +227,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.9166667
         value: 3.86
+        inSlope: 0.78000003
+        outSlope: 0.78000003
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.1666666
+        value: 4
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -358,4 +380,32 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.25
+    functionName: AnimAttackHitBox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.33333334
+    functionName: AnimAttackReset
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.6666667
+    functionName: AnimAttackHitBox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 1
+    messageOptions: 0
+  - time: 0.8333333
+    functionName: AnimAttackReset
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

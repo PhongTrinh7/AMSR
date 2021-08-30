@@ -39,14 +39,14 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.083333336
         value: {x: 0.47, y: 0.5, z: 0}
-        inSlope: {x: 0.9599995, y: 0, z: 0}
-        outSlope: {x: 0.9599995, y: 0, z: 0}
+        inSlope: {x: 0.7199997, y: 0, z: 0}
+        outSlope: {x: 0.7199997, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.16666667
+        time: 0.20833333
         value: {x: 0.5, y: 0.5, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -73,10 +73,10 @@ AnimationClip:
         type: 3}
     - time: 0.125
       value: {fileID: 75247659674326798, guid: d200227da48547846ba077327de3d129, type: 3}
-    - time: 0.16666667
+    - time: 0.20833333
       value: {fileID: -3255753685432761604, guid: d200227da48547846ba077327de3d129,
         type: 3}
-    - time: 0.20833333
+    - time: 0.25
       value: {fileID: -2515130866486199676, guid: d200227da48547846ba077327de3d129,
         type: 3}
     attribute: m_Sprite
@@ -116,7 +116,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.29166666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -156,14 +156,14 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.083333336
         value: 0.47
-        inSlope: 0.9599995
-        outSlope: 0.9599995
+        inSlope: 0.7199997
+        outSlope: 0.7199997
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.16666667
+        time: 0.20833333
         value: 0.5
         inSlope: 0
         outSlope: 0
@@ -209,7 +209,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.16666667
+        time: 0.20833333
         value: 0.5
         inSlope: 0
         outSlope: 0
@@ -255,7 +255,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.16666667
+        time: 0.20833333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -274,16 +274,37 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.16666667
-    functionName: Hit
+  - time: 0.083333336
+    functionName: AnimAttackDamage
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 0.1
+    floatParameter: 0
+    intParameter: 2
+    messageOptions: 0
+  - time: 0.125
+    functionName: AnimAttackKnockback
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 2
     intParameter: 0
     messageOptions: 0
-  - time: 0.16666667
-    functionName: PlaySound
+  - time: 0.20833333
+    functionName: AnimAttackHitBox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.20833333
+    functionName: AnimPlaySound
     data: Light
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.25
+    functionName: AnimAttackReset
+    data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

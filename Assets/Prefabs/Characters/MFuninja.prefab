@@ -209,7 +209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dummy: 0
-  maxHealth: 0
+  currentHealth: 0
+  maxHealth: 25
   speed: 2
   jumpHeight: 5
   jumping: 0
@@ -223,8 +224,8 @@ MonoBehaviour:
   lookDirection: 1
   attackHitBox: {fileID: 202165795302109450}
   attackType: 0
-  attackDamage: 1
-  attackKnockback: 1
+  attackDamage: 3
+  attackKnockback: 3
   isAttacking: 0
   invincible: 0
   blocking: 0
@@ -233,11 +234,11 @@ MonoBehaviour:
     type: 3}
   projectileOrigin: {fileID: 6973813737797469030}
   projectile: {fileID: 0}
-  attackCoolDown: 0
-  attackTimer: 0
+  attackCoolDown: 4
+  attackTimer: 3
   changeTime: 3
-  xfar: 6
-  xclose: 3
+  xfar: 2
+  xclose: 1
   leashDist: 15
   target: {fileID: 0}
 --- !u!1 &6973813737797469030
@@ -475,7 +476,7 @@ PrefabInstance:
     - target: {fileID: 4836618493368466697, guid: 17c29387e3cf44345987d4628cc618af,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4836618493378605097, guid: 17c29387e3cf44345987d4628cc618af,
         type: 3}

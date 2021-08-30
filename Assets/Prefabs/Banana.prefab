@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1649764998974681990}
   - component: {fileID: 1649764998974681991}
   - component: {fileID: 110539860009367273}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,14 +98,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 1
   speed: 0.4
+  launchPower: 3
   explosion: {fileID: 8956771229110071260, guid: 309a2d394c3fb574f9f5d23f5a51b943,
     type: 3}
   duration: 1
-  damage: 2
+  damage: 1
   knock: 1
   damageLayers:
     serializedVersion: 2
     m_Bits: 256
+  startSound: 
+  hitSound: 
 --- !u!65 &1649764998974681991
 BoxCollider:
   m_ObjectHideFlags: 0

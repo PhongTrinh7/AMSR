@@ -64,6 +64,9 @@ AnimationClip:
     - time: 1
       value: {fileID: 8070790785820329037, guid: 88c1803e6a798b442a61752e07d59cc2,
         type: 3}
+    - time: 1.5833334
+      value: {fileID: 8070790785820329037, guid: 88c1803e6a798b442a61752e07d59cc2,
+        type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -98,12 +101,13 @@ AnimationClip:
     - {fileID: 338249456883585183, guid: 63b3b28b461669044be658d2236d3f89, type: 3}
     - {fileID: -6996017578025766160, guid: 63b3b28b461669044be658d2236d3f89, type: 3}
     - {fileID: 8070790785820329037, guid: 88c1803e6a798b442a61752e07d59cc2, type: 3}
+    - {fileID: 8070790785820329037, guid: 88c1803e6a798b442a61752e07d59cc2, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.9166666
+    m_StopTime: 1.625
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -124,27 +128,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: PlaySound
-    data: Coming
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0
-    functionName: IFrames
+    functionName: AnimInvincible
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
-  - time: 0
-    functionName: CantMove
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 1
-    messageOptions: 0
-  - time: 0.45833334
+  - time: 0.5416667
     functionName: Anglerection
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -152,21 +142,14 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 1
-    functionName: PlaySound
+    functionName: AnimPlaySound
     data: Moan
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.9166666
-    functionName: CantMove
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.9166666
-    functionName: IFrames
+  - time: 1.625
+    functionName: AnimInvincible
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

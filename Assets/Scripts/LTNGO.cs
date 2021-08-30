@@ -9,100 +9,111 @@ public class LTNGO : MonoBehaviour
     public Animator animator;
     public AudioSource audioSource;
 
-    protected Vector3 lookDirection;
+    protected int lookDirection;
 
     //Attacks
     public LayerMask damageLayers;
     public float attackRange = 0.5f;
-    public int attackDamage = 40;
+    public int attackDamage = 1;
 
     public float hitForce;
     public float launchForce;
-
-    public float hitStopTime;
     public GameObject hitSparks;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<BoxCollider>();
         animator = GetComponent<Animator>();
     }
 
-    public void Direction(float dir)
+    public void Ult()
     {
-        lookDirection = new Vector3(dir, 0, 0);
+        animator.Play("FurashuBang");
+    }
+
+    public void Direction(int dir)
+    {
+        lookDirection = dir;
         transform.localScale = new Vector3(dir, 1, 1);
     }
 
     public void Hit()
     {
-        AudioManager.Instance.PlayOneShot("Swing");
-        audioSource.PlayOneShot(audioSource.clip);
-        Vector3 attackDirPoint = rb.position + new Vector3(lookDirection.x, 1.5f, 0);
+        AudioManager.Instance.Play("Swing");
+        AudioManager.Instance.Play("Ora");
+        Vector3 attackDirPoint = rb.position + new Vector3(lookDirection, 1.5f, 0);
 
         Collider[] hitEnemies = Physics.OverlapSphere(attackDirPoint, attackRange, damageLayers);
         foreach (Collider enemy in hitEnemies)
         {
             if (enemy.CompareTag("Enemy"))
             {
-                StartCoroutine(enemy.GetComponent<Character>().HitStop(hitStopTime, false));
-                StartCoroutine(HitStop(hitStopTime / 2, enemy, new Vector2(lookDirection.x * hitForce, hitForce / 2)));
+                MCharacter target = enemy.gameObject.GetComponent<MCharacter>();
+
+                if (target == null)
+                {
+                    return;
+                }
+
+                StartCoroutine(HitStop(attackDamage * 2));
+                target.StartCoroutine(target.GetHit(col, attackDamage, new Vector3(lookDirection * 3, 3, 0), true, 2));
             }
         }
     }
 
     public void ForwardLaunchHit()
     {
-        AudioManager.Instance.PlayOneShot("Swing");
-        audioSource.PlayOneShot(audioSource.clip);
-        Vector3 attackDirPoint = rb.position + new Vector3(lookDirection.x, 1.5f, 0);
+        AudioManager.Instance.Play("Swing");
+        AudioManager.Instance.Play("Ora");
+        Vector3 attackDirPoint = rb.position + new Vector3(lookDirection, 1.5f, 0);
 
         Collider[] hitEnemies = Physics.OverlapSphere(attackDirPoint, attackRange, damageLayers);
         foreach (Collider enemy in hitEnemies)
         {
             if (enemy.CompareTag("Enemy"))
             {
-                StartCoroutine(enemy.GetComponent<Character>().HitStop(hitStopTime));
-                StartCoroutine(HitStop(hitStopTime, enemy, new Vector2(lookDirection.x * launchForce, hitForce)));
+                MCharacter target = enemy.gameObject.GetComponent<MCharacter>();
+
+                if (target == null)
+                {
+                    return;
+                }
+
+                StartCoroutine(HitStop(attackDamage * 3));
+                target.StartCoroutine(target.GetHit(col, attackDamage, new Vector3(lookDirection * 15, 5, 0), true, 3));
             }
         }
-    }
-
-    protected IEnumerator HitStop(float stopTime, Collider col, Vector2 force)
-    {
-        Instantiate(hitSparks, col.transform.position + new Vector3(0, 1.5f, 0), Quaternion.identity);
-        AudioManager.Instance.Play("Hit");
-        animator.speed = 0;
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionY;
-        yield return new WaitForSecondsRealtime(stopTime);
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-        animator.speed = 1;
-
-        if (col == null)
-        {
-            yield return null;
-        }
-
-        col.attachedRigidbody.AddForce(force, ForceMode.Impulse);
     }
 
     public void Flash()
     {
         GameManager.Instance.StartCoroutine(GameManager.Instance.Trip(2f));
-        AudioManager.Instance.PlayOneShot("Tokiwotomare");
+        AudioManager.Instance.Play("Tokiwotomare");
         Vector3 attackDirPoint = rb.position + new Vector3(0, 1.5f, 0);
 
         Collider[] hitEnemies = Physics.OverlapSphere(attackDirPoint, 30, damageLayers);
         foreach (Collider enemy in hitEnemies)
         {
-            if (enemy.tag != "Player")
+            if (enemy.CompareTag("Enemy"))
             {
-                enemy.GetComponent<Character>().Health -= 10;
-                enemy.GetComponent<Character>().StartCoroutine(enemy.GetComponent<Character>().HitStop(5f, false));
+                MCharacter target = enemy.gameObject.GetComponent<MCharacter>();
+
+                target.StartCoroutine(target.GetHit(col, 10, new Vector3(0, 5, 0), true, 5));
             }
         }
+    }
+
+    protected IEnumerator HitStop(float stopTime)
+    {
+        stopTime /= 20;
+
+        animator.speed = 0;
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+        yield return new WaitForSeconds(stopTime);
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+        animator.speed = 1;
     }
 
     private void Seppukku()

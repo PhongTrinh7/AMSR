@@ -209,7 +209,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dummy: 0
-  maxHealth: 0
+  currentHealth: 0
+  maxHealth: 50
+  sprint: 0
   speed: 1
   jumpHeight: 5
   jumping: 0
@@ -234,13 +236,16 @@ MonoBehaviour:
   projectileOrigin: {fileID: 6812006734810133580}
   projectile: {fileID: 1649764998974681990, guid: 80c7072eb7d0a0f478c52e184555d313,
     type: 3}
-  attackCoolDown: 10
-  attackTimer: 0.9
+  attackCoolDown: 6
+  attackTimer: 3
   changeTime: 3
-  xfar: 7
-  xclose: 4
+  xfar: 10
+  xclose: 1
   leashDist: 15
   target: {fileID: 0}
+  explosion: {fileID: 7326290715664763052, guid: 68879ba1631d01a429edf65083707449,
+    type: 3}
+  pilot: {fileID: 5453203933560848094, guid: 4195c7e5c4ba21c49bf8bd5216d46d44, type: 3}
 --- !u!1 &6812006734810133580
 GameObject:
   m_ObjectHideFlags: 0

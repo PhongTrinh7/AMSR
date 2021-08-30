@@ -194,7 +194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dummy: 0
+  currentHealth: 0
   maxHealth: 0
+  sprint: 0
   speed: 5
   jumpHeight: 5
   jumping: 0
@@ -217,8 +219,12 @@ MonoBehaviour:
   hitSparks: {fileID: 8956771229110071260, guid: 309a2d394c3fb574f9f5d23f5a51b943,
     type: 3}
   projectileOrigin: {fileID: 5555052289955347396}
-  projectile: {fileID: 1649764998974681990, guid: 97be0a258ade3604485fe4704bc13fd5,
+  projectile: {fileID: 1649764998974681990, guid: b107b1607cd9f0f4e83bcad750b62f5d,
     type: 3}
+  savageTimer: 0
+  savageInterval: 0.1
+  healthBar: {fileID: 0}
+  energyBar: {fileID: 0}
 --- !u!1 &5555052289955347396
 GameObject:
   m_ObjectHideFlags: 0

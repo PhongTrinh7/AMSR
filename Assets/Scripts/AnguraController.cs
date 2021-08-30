@@ -142,7 +142,7 @@ public class AnguraController : Character
                 if (Energy >= 25)
                 {
                     AudioManager.Instance.PlayOneShot("Revengeance");
-                    Instantiate(stand, rb.position + new Vector3(lookDirection.x, .5f, 0), Quaternion.identity).Direction(lookDirection.x);
+                    Instantiate(stand, rb.position + new Vector3(lookDirection.x, .5f, 0), Quaternion.identity).Direction(1);
                     Energy -= 25;
                 }
                 else
@@ -265,7 +265,7 @@ public class AnguraController : Character
 
     public void Anglerection()
     {
-        Instantiate(ult, rb.position + new Vector3(-lookDirection.x, .5f, 0), Quaternion.identity).Direction(lookDirection.x);
+        Instantiate(ult, rb.position + new Vector3(-lookDirection.x, .5f, 0), Quaternion.identity).Direction(1);
     }
 
     public void Anglerang()

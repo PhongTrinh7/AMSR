@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1649764998974681991}
   - component: {fileID: 6694033877065342876}
   - component: {fileID: 6825895175395294568}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,14 +99,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 1
   speed: 0.5
+  launchPower: 1
   explosion: {fileID: 7326290715664763052, guid: d82823ddd48ae0e4d836fcb4fde1d395,
     type: 3}
-  duration: 3
-  damage: 5
+  duration: 1
+  damage: 2
   knock: 0
   damageLayers:
     serializedVersion: 2
     m_Bits: 256
+  startSound: Pew
+  hitSound: 
 --- !u!65 &1649764998974681991
 BoxCollider:
   m_ObjectHideFlags: 0

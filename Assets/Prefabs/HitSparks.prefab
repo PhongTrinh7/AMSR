@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8956771229110071263}
   - component: {fileID: 8956771229110071262}
   - component: {fileID: 8956771229110071261}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: HitSparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

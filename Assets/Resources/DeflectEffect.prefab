@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8086817574295950409}
   - component: {fileID: 8086817574295950406}
-  - component: {fileID: 8086817574295950407}
+  - component: {fileID: 5935751150688406162}
   m_Layer: 0
   m_Name: DeflectEffect
   m_TagString: Untagged
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 2928478032127851589, guid: 0606e14cd440d644bb0c4e4fda4aa50c,
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2939689202024913387, guid: 78b234b62eb25eb4ca2381c168107f2f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8086817574295950407
+--- !u!95 &5935751150688406162
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 8086817574295950404}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d1ad59704adc5164db4424bae8f7eac4, type: 2}
+  m_Controller: {fileID: 9100000, guid: ff6fdee6c9e5b7e418c21348da5cb347, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

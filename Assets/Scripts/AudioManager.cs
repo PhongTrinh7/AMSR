@@ -6,6 +6,7 @@ using System.Collections;
 public class AudioManager : Manager<AudioManager>
 {
     public Sound[] sounds;
+    public DialogueBox db;
 
     public override void Awake()
     {
@@ -16,6 +17,7 @@ public class AudioManager : Manager<AudioManager>
             s.source.clip = s.clip;
 
             s.source.volume = s.volume;
+            s.originalVolume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
@@ -80,5 +82,15 @@ public class AudioManager : Manager<AudioManager>
 
         audioSource.Stop();
         audioSource.volume = startVolume;
+    }
+
+    public void ChangeVolume(float n)
+    {
+        foreach (Sound s in AudioManager.Instance.sounds)
+        {
+            s.source.volume = s.originalVolume * n;
+        }
+
+        db.audioSource.volume = n * .1f;
     }
 }

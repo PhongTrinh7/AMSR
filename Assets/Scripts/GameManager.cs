@@ -16,10 +16,6 @@ public class GameManager : Manager<GameManager>
 
     //Stando Powa
     public Camera cam;
-    public float flipTime;
-    private bool bFlip;
-    Quaternion originalRoation;
-    Quaternion desiredRotation;
 
     public GameObject fundam;
     public CinemachineVirtualCamera vcam;
@@ -28,6 +24,8 @@ public class GameManager : Manager<GameManager>
     public GameObject lsdFilter;
     public bool gameOver;
     public GameObject ultPrompt;
+
+    public CinemachineTargetGroup targetGroup;
 
     public int Enemies
     {
@@ -38,16 +36,16 @@ public class GameManager : Manager<GameManager>
 
         set
         {
+            Debug.Log(enemies);
             enemies = value;
             if (enemies == 0)
             {
                 StartDialogue();
                 fundam.SetActive(true);
-                //StopAllCoroutines();
                 StartCoroutine(CameraTarget(fundam, 2f));
             }
 
-            if (enemies == -1)
+            if (enemies == -5)
             {
                 StartDialogue();
             }
@@ -55,21 +53,26 @@ public class GameManager : Manager<GameManager>
     }
     public int enemies;
 
+    public GameObject player1;
+    public GameObject player2;
+    public GameObject player2TextPrompt;
+    public GameObject player2Bars;
+
 
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1.1f;
-        Time.fixedDeltaTime = 0.02f;
+        Time.fixedDeltaTime = 0.015f;
 
         Physics.gravity = new Vector3(0, -27F, 0);
 
         AudioManager.Instance.Play("Music");
-        AudioManager.Instance.PlayOneShot("Thunder");
-        AudioManager.Instance.PlayOneShot("Rain");
+        AudioManager.Instance.Play("Thunder");
+        AudioManager.Instance.Play("Rain");
 
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 144;
 
         StartDialogue();
 
@@ -96,6 +99,11 @@ public class GameManager : Manager<GameManager>
                 Debug.Log("Restart");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
+        }
+
+        if (!player2.activeInHierarchy && Input.GetButtonDown("Mire1"))
+        {
+            PlayerTwoJoin();
         }
     }
 
@@ -178,6 +186,7 @@ public class GameManager : Manager<GameManager>
         Time.timeScale = 1.1f;
     }
 
+    /*
     void StandoPowa()
     {
         cam.transform.rotation = Quaternion.RotateTowards(originalRoation, desiredRotation, flipTime * Time.deltaTime);
@@ -187,16 +196,24 @@ public class GameManager : Manager<GameManager>
             bFlip = false;
         }
     }
+    */
+
+    public void PlayerTwoJoin()
+    {
+        player2TextPrompt.SetActive(false);
+        player2Bars.SetActive(true);
+        player2.transform.position = player1.transform.position;
+        player2.SetActive(true);
+        //Instantiate(player2, player1.transform.position, Quaternion.identity);
+        targetGroup.m_Targets[1].weight = 1;
+    }
 
     public IEnumerator CameraTarget(GameObject go, float time=2f)
     {
         while (dialoguing)
             yield return null;
 
-        //StopAllCoroutines();
-
         vcam.Follow = go.transform;
-        //vcam.LookAt = go.transform;
 
         float dist = vcam.GetCinemachineComponent<CinemachineFramingTransposer>().m_CameraDistance;
         vcam.GetCinemachineComponent<CinemachineFramingTransposer>().m_CameraDistance = 40f;
@@ -205,8 +222,7 @@ public class GameManager : Manager<GameManager>
 
         vcam.GetCinemachineComponent<CinemachineFramingTransposer>().m_CameraDistance = dist;
 
-        vcam.Follow = AnguraController.Instance.transform;
-        //vcam.LookAt = AnguraController.Instance.transform;
+        vcam.Follow = targetGroup.transform;
     }
 
     public void GameOver()
