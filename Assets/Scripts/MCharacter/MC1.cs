@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MC1 : MCharacter
 {
@@ -11,6 +12,8 @@ public class MC1 : MCharacter
     //UI
     public HealthBar healthBar;
     public EnergyBar energyBar;
+    public int bullets;
+    public Text bulletsText;
 
 
     public override int Health
@@ -59,6 +62,7 @@ public class MC1 : MCharacter
 
         healthBar.SetMaxHealth(maxHealth);
         Energy = 0;
+        bulletsText.text = "x" + bullets;
     }
 
     // Update is called once per frame
@@ -156,5 +160,25 @@ public class MC1 : MCharacter
     {
         base.AnimAttackReset();
         savageAxe = false;
+    }
+
+    protected override IEnumerator Hit(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            yield return base.Hit(other);
+
+            Energy += attackDamage;
+        }
+    }
+
+    protected override void FireProjectile()
+    {
+        if (bullets > 0)
+        {
+            Instantiate(projectile, projectileOrigin.transform.position, Quaternion.identity).direction = lookDirection;
+            bullets--;
+            bulletsText.text = "x" + bullets;
+        }
     }
 }

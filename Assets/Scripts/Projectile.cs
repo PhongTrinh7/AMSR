@@ -18,7 +18,6 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        Physics.IgnoreLayerCollision(14, 15);
         AudioManager.Instance.Play(startSound);
     }
 

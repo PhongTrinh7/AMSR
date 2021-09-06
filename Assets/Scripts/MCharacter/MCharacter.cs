@@ -89,7 +89,6 @@ public class MCharacter : MonoBehaviour
         col = GetComponent<CapsuleCollider>();
         animator = GetComponent<Animator>();
 
-        Physics.IgnoreLayerCollision(8, 8);
         layerMask = ~layerMask;
 
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -315,7 +314,7 @@ public class MCharacter : MonoBehaviour
         rb.AddForce(direction, ForceMode.Impulse);
     }
 
-    public void FireProjectile()
+    protected virtual void FireProjectile()
     {
         Instantiate(projectile, projectileOrigin.transform.position, Quaternion.identity).direction = lookDirection;
     }

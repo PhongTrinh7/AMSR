@@ -26,6 +26,7 @@ public class GameManager : Manager<GameManager>
     public GameObject ultPrompt;
 
     public CinemachineTargetGroup targetGroup;
+    public CinemachineImpulseSource impulseSource;
 
     public int Enemies
     {
@@ -66,6 +67,8 @@ public class GameManager : Manager<GameManager>
         Time.fixedDeltaTime = 0.015f;
 
         Physics.gravity = new Vector3(0, -27F, 0);
+        Physics.IgnoreLayerCollision(8, 8);
+        Physics.IgnoreLayerCollision(14, 15);
 
         AudioManager.Instance.Play("Music");
         AudioManager.Instance.Play("Thunder");
@@ -104,6 +107,12 @@ public class GameManager : Manager<GameManager>
         if (!player2.activeInHierarchy && Input.GetButtonDown("Mire1"))
         {
             PlayerTwoJoin();
+        }
+
+        if (Input.GetKeyDown("o"))
+        {
+            impulseSource.GenerateImpulse();
+            ScreenLock();
         }
     }
 
@@ -225,6 +234,12 @@ public class GameManager : Manager<GameManager>
         vcam.Follow = targetGroup.transform;
     }
 
+    public void ScreenLock()
+    {
+        vcam.Follow = null;
+        //Physics.IgnoreCollision();
+    }
+
     public void GameOver()
     {
         if (!gameOver)
@@ -254,6 +269,7 @@ public class GameManager : Manager<GameManager>
 
     public IEnumerator Trip(float time)
     {
+        impulseSource.GenerateImpulse();
         lsdFilter.SetActive(true);
 
         yield return new WaitForSecondsRealtime(time);

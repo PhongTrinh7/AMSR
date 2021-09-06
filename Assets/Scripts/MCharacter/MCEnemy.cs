@@ -21,7 +21,6 @@ public class MCEnemy : MCharacter
     protected override void Start()
     {
         base.Start();
-        //Physics.IgnoreLayerCollision(8, 14);
     }
 
     // Update is called once per frame

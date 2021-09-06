@@ -9,12 +9,12 @@ public class MCAnglerMan : MCharacter
     public LTNGO stand;
     public GameObject anglaura;
     public Projectile anglerang;
-    public int anglerangs;
-    public Text anglerangsText;
 
     //UI
     public HealthBar healthBar;
     public EnergyBar energyBar;
+    public int anglerangs;
+    public Text anglerangsText;
 
 
     public override int Health
@@ -180,8 +180,11 @@ public class MCAnglerMan : MCharacter
 
     protected override IEnumerator Hit(Collider other)
     {
-        yield return base.Hit(other);
+        if (other.CompareTag("Enemy"))
+        {
+            yield return base.Hit(other);
 
-        Energy += attackDamage;
+            Energy += attackDamage;
+        }
     }
 }
