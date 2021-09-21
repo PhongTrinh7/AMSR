@@ -8,11 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : Manager<GameManager>
 {
     //Dialogue
-    public DialogueScreen dialogueScreen;
-    public Dialogue[] dialogues;
-    public int dialogueIndex = -1;
     public bool dialoguing;
-    bool intermission;
+    public DialogueManager dialogueManager;
 
     //Stando Powa
     public Camera cam;
@@ -41,14 +38,14 @@ public class GameManager : Manager<GameManager>
             enemies = value;
             if (enemies == 0)
             {
-                StartDialogue();
+                dialogueManager.StartDialogue();
                 fundam.SetActive(true);
                 StartCoroutine(CameraTarget(fundam, 2f));
             }
 
             if (enemies == -5)
             {
-                StartDialogue();
+                dialogueManager.StartDialogue();
             }
         }
     }
@@ -77,7 +74,7 @@ public class GameManager : Manager<GameManager>
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 144;
 
-        StartDialogue();
+        dialogueManager.StartDialogue();
 
         //originalRoation = cam.transform.rotation;
         //desiredRotation = Quaternion.Euler(20, 0, -180);
@@ -85,22 +82,13 @@ public class GameManager : Manager<GameManager>
 
     // Update is called once per frame
     void Update()
-    {
-        if (dialoguing)
+    {        
+        if (gameOver)
         {
             if (Input.GetButtonDown("Jump"))
             {
-                AdvanceDialogue();
-            }
-        }
+                //SetScene();
 
-        
-        if (gameOver)
-        {
-            if (Input.GetButtonDown("Jump")){ 
-        
-                Debug.Log("Restart");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
 
@@ -116,81 +104,12 @@ public class GameManager : Manager<GameManager>
         }
     }
 
-    public void StartDialogue()
-    {
-        PauseGame();
-        dialogueScreen.gameObject.SetActive(true);
-        dialoguing = true;
-        AdvanceDialogue();
-    }
-
-    public void AdvanceDialogue()
-    {
-        if (intermission)
-        {
-            EndDialogue();
-            intermission = false;
-            return;
-        }
-
-        dialogueIndex++;
-
-        if (dialogueIndex >= dialogues.Length)
-        {
-            EndDialogue();
-            return;
-        }
-
-        if (dialogues[dialogueIndex].leftSpeaker == null)
-        {
-            dialogueScreen.left.gameObject.SetActive(false);
-        }
-        else
-        {
-            dialogueScreen.left.gameObject.SetActive(true);
-            dialogueScreen.SetLeftImage(dialogues[dialogueIndex].leftSpeaker);
-        }
-
-        if (dialogues[dialogueIndex].rightSpeaker == null)
-        {
-            dialogueScreen.right.gameObject.SetActive(false);
-        }
-        else
-        {
-            dialogueScreen.right.gameObject.SetActive(true);
-            dialogueScreen.SetRightImage(dialogues[dialogueIndex].rightSpeaker);
-        }
-
-        if (dialogues[dialogueIndex].left)
-        {
-            dialogueScreen.LeftSpeaking(dialogues[dialogueIndex].words, dialogues[dialogueIndex].speakerName);
-        }
-        else
-        {
-            dialogueScreen.RightSpeaking(dialogues[dialogueIndex].words, dialogues[dialogueIndex].speakerName);
-        }
-
-        dialogueScreen.Speak(dialogues[dialogueIndex].voice);
-
-        if (dialogues[dialogueIndex].intermission)
-        {
-            intermission = true;
-        }
-    }
-
-    public void EndDialogue()
-    {
-        dialoguing = false;
-        dialogueScreen.gameObject.SetActive(false);
-        ResumeGame();
-    }
-
-    void PauseGame()
+    public void PauseGame()
     {
         Time.timeScale = 0;
     }
 
-    void ResumeGame()
+    public void ResumeGame()
     {
         Time.timeScale = 1.1f;
     }
@@ -260,7 +179,6 @@ public class GameManager : Manager<GameManager>
             ppv.enabled = true;
             Time.timeScale = .1f;
             Time.fixedDeltaTime = .1f;
-            //this.enabled = false;
             wasted.SetActive(true);
             gameOver = true;
         }
@@ -275,5 +193,16 @@ public class GameManager : Manager<GameManager>
         yield return new WaitForSecondsRealtime(time);
 
         //lsdFilter.SetActive(false);
+    }
+
+    public void SetScene(int i)
+    {
+        StartCoroutine(SetSceneCo());
+    }
+
+    private IEnumerator SetSceneCo()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        yield return null;
     }
 }
