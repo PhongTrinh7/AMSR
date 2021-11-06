@@ -11,5 +11,8 @@ public class Dialogue : ScriptableObject
     public Sprite rightSpeaker;
     public bool left;
     public AudioClip voice;
+    public Sprite cutsceneFrame;
     public bool intermission;
+    public string musicChange;
+    public string cutscene;
 }

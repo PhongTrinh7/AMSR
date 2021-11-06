@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     public Dialogue[] dialogues;
     public int dialogueIndex = -1;
     bool intermission;
+
+    public VideoPlayer vidPlayer;
 
     private void Update()
     {
@@ -31,6 +34,8 @@ public class DialogueManager : MonoBehaviour
 
     public void AdvanceDialogue()
     {
+        Debug.Log(dialogueIndex);
+
         if (intermission)
         {
             EndDialogue();
@@ -44,6 +49,21 @@ public class DialogueManager : MonoBehaviour
         {
             EndDialogue();
             return;
+        }
+
+        if (dialogues[dialogueIndex].musicChange != "")
+        {
+            AudioManager.Instance.StopAll();
+            AudioManager.Instance.Play(dialogues[dialogueIndex].musicChange);
+        }
+
+        if (dialogues[dialogueIndex].words == "")
+        {
+            dialogueScreen.dialogueBox.gameObject.SetActive(false);
+        }
+        else
+        {
+            dialogueScreen.dialogueBox.gameObject.SetActive(true);
         }
 
         if (dialogues[dialogueIndex].leftSpeaker == null)
@@ -76,6 +96,30 @@ public class DialogueManager : MonoBehaviour
         }
 
         dialogueScreen.Speak(dialogues[dialogueIndex].voice);
+
+        if (dialogues[dialogueIndex].cutsceneFrame != null)
+        {
+            dialogueScreen.SetCutsceneFrame(dialogues[dialogueIndex].cutsceneFrame);
+        }
+        else
+        {
+            dialogueScreen.UnsetCutsceneFrame();
+        }
+
+        if (dialogues[dialogueIndex].cutscene != "")
+        {
+            vidPlayer.url = dialogues[dialogueIndex].cutscene;
+            vidPlayer.Prepare();
+            
+            vidPlayer.frame = 1;
+            dialogueScreen.PlayVideo();
+            vidPlayer.Play();
+        }
+        else
+        {
+            vidPlayer.Stop();
+            dialogueScreen.StopVideo();
+        }
 
         if (dialogues[dialogueIndex].intermission)
         {

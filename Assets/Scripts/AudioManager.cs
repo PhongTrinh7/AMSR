@@ -6,7 +6,7 @@ using System.Collections;
 public class AudioManager : Manager<AudioManager>
 {
     public Sound[] sounds;
-    public DialogueBox db;
+    public DialogueScreen ds;
 
     public override void Awake()
     {
@@ -69,6 +69,17 @@ public class AudioManager : Manager<AudioManager>
         }
     }
 
+    public void StopAll()
+    {
+        foreach (Sound s in AudioManager.Instance.sounds)
+        {
+            if (s != null)
+            {
+                s.source.Stop();
+            }
+        }
+    }
+
     public IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
     {
         float startVolume = audioSource.volume;
@@ -91,6 +102,6 @@ public class AudioManager : Manager<AudioManager>
             s.source.volume = s.originalVolume * n;
         }
 
-        db.audioSource.volume = n * .1f;
+        ds.audioSource.volume = n * .1f;
     }
 }

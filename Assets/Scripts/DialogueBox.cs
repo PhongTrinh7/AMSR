@@ -8,5 +8,4 @@ public class DialogueBox : MonoBehaviour
     public Image backing;
     public Text speakerName;
     public Text dialogue;
-    public AudioSource audioSource;
 }

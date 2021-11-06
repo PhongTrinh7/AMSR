@@ -10,6 +10,9 @@ public class DialogueScreen : MonoBehaviour
     public DialogueBox dialogueBox;
     public Color32 speakingColor;
     public Color32 fadeColor;
+    public GameObject cutsceneImage;
+    public AudioSource audioSource;
+    public RawImage cutscene;
 
     public void SetLeftImage(Sprite portrait)
     {
@@ -39,7 +42,29 @@ public class DialogueScreen : MonoBehaviour
 
     public void Speak(AudioClip clip)
     {
-        dialogueBox.audioSource.clip = clip;
-        dialogueBox.audioSource.Play(0);
+        audioSource.clip = clip;
+        audioSource.Play(0);
+    }
+
+    public void SetCutsceneFrame(Sprite frame)
+    {
+        cutsceneImage.SetActive(true);
+        cutsceneImage.transform.GetChild(0).GetComponent<Image>().sprite = frame;
+    }
+
+    public void UnsetCutsceneFrame()
+    {
+        cutsceneImage.SetActive(false);
+        cutsceneImage.transform.GetChild(0).GetComponent<Image>().sprite = null;
+    }
+
+    public void PlayVideo()
+    {
+        cutscene.gameObject.SetActive(true);
+    }
+
+    public void StopVideo()
+    {
+        cutscene.gameObject.SetActive(false);
     }
 }
